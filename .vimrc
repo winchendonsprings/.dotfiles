@@ -139,18 +139,18 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'AutoComplPop'
 Bundle 'molokai'
 Bundle 'altercation/vim-colors-solarized'
- colorscheme jellybeans
+Bundle 'qqshfox/inkpot'
+set laststatus=2 
+" add colors
+set t_Co=256
+" colorscheme zenburn 
+colorscheme jellybeans
 " colorscheme molokai
 " solarized start
 " syntax enable
 " set background = dark
 " colorscheme solarized
 " solarized END
-set laststatus=2 
-" add colors
-set t_Co=256
-" colorscheme zenburn 
-" colorscheme jellybeans
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
 " powerline
