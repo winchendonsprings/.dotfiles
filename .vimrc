@@ -109,7 +109,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
 " ...
  
 filetype plugin indent on     " required!
@@ -136,7 +136,16 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'nanotech/jellybeans.vim'
-colorscheme jellybeans
+Bundle 'AutoComplPop'
+Bundle 'molokai'
+Bundle 'altercation/vim-colors-solarized'
+ colorscheme jellybeans
+" colorscheme molokai
+" solarized start
+" syntax enable
+" set background = dark
+" colorscheme solarized
+" solarized END
 set laststatus=2 
 " add colors
 set t_Co=256
