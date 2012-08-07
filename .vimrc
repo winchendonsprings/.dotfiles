@@ -155,6 +155,8 @@ set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
 " powerline
 let g:Powerline_symbols = 'fancy'
+" allows :w!! to save if you forgot to open a readonly without perms
+cmap w!! %!sudo tee > /dev/null %
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
