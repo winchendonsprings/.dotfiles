@@ -1,10 +1,9 @@
 set defsearch=d
 set gui=none
 "removes popup at bottom
- " set autocomplete=false
+" set autocomplete=false
 
 " QMarks 
-
 silent qmark f http://facebook.com/
 silent qmark h http://news.ycombinator.com/ 
 silent qmark d http://duckduckgo.com/ 
