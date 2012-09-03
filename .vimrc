@@ -140,6 +140,9 @@ Bundle 'AutoComplPop'
 Bundle 'molokai'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'qqshfox/inkpot'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'rainbow'
 set laststatus=2 
 " add colors
 set t_Co=256
