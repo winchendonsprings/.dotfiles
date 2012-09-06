@@ -1,6 +1,6 @@
-set defsearch=d
+set defsearch=duckduckgo
 set gui=none
-"removes popup at bottom
+" removes popup at bottom
 " set autocomplete=false
 
 " QMarks 

@@ -88,6 +88,7 @@ endif
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 
 """"""""""""""""""" For Vundle --- There may be duplicates
+
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -135,19 +136,28 @@ filetype plugin indent on     " required!
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'nanotech/jellybeans.vim'
+Bundle 'kien/ctrlp.vim'
 Bundle 'AutoComplPop'
-Bundle 'molokai'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'qqshfox/inkpot'
-Bundle 'kien/ctrlp.vim'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'tpope/vim-vividchalk'
-Bundle 'rainbow'
+Bundle 'chriskempson/tomorrow-theme'
+Bundle 'w0ng/vim-hybrid'
+Bundle 'molokai'
+Bundle 'rainbow.zip'
+Bundle 'wombat256.vim'
+Bundle 'xoria256.vim'
+
 set laststatus=2 
 " add colors
 set t_Co=256
+" colorscheme hybrid
+" colorscheme inkpot
+" colorscheme vividchalk
+  colorscheme Tomorrow-Night-Bright 
 " colorscheme zenburn 
-colorscheme jellybeans
+" colorscheme jellybeans
 " colorscheme molokai
 " solarized start
 " syntax enable
@@ -160,6 +170,9 @@ set directory=~/.tmp " Don't clutter dirs with tmp & swp
 let g:Powerline_symbols = 'fancy'
 " allows :w!! to save if you forgot to open a readonly without perms
 cmap w!! %!sudo tee > /dev/null %
+" Ctrlp mappings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
