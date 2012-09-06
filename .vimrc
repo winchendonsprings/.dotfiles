@@ -155,9 +155,9 @@ set t_Co=256
 " colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
-  colorscheme Tomorrow-Night-Bright 
+" colorscheme Tomorrow-Night-Bright 
 " colorscheme zenburn 
-" colorscheme jellybeans
+ colorscheme jellybeans
 " colorscheme molokai
 " solarized start
 " syntax enable
