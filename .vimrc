@@ -173,6 +173,8 @@ cmap w!! %!sudo tee > /dev/null %
 " Ctrlp mappings
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+" no welcome message
+set shortmess+=I
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
