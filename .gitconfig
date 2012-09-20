@@ -1,0 +1,13 @@
+[user]
+	name = Ryan Greene
+	email = winchendonsprings@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[alias]
+	l = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+[gihub]
+	user = winchendonsprings
+
