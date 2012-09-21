@@ -89,16 +89,16 @@ set menu_scroll
 set pager_index_lines=10
 # mark all messages as read with M
 macro index M "T.*\n;WN" "Mark all messages as read"
-# solarized 256 below
-# source ~/Documents/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
 
 # Zenburn colors
-source .mutt-zenburn.muttrc
-## solarized below
-#source .mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
-#source .mutt/mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
-#source .mutt/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
-#source .mutt/mutt-colors-solarized/mutt-colors-solarized-light-256.muttrc
+source /home/ry/.mutt-zenburn.muttrc
+
+## solarizedi colors below
+#source /home/ry/.mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
+#source /home/ry/.mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
+#source /home/ry/.mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
+#source /home/ry/.mutt-colors-solarized/mutt-colors-solarized-light-256.muttrc
+
 #source .mutt/colors.muttrc
 
 #Ryan

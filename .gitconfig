@@ -10,4 +10,5 @@
 
 [gihub]
 	user = winchendonsprings
-
+[diff]
+	tool = vimdiff
