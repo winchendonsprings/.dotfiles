@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux='tmux -2'
 alias cl='clear'
+alias ack='ack-grep'
 alias update='sudo aptitude update'
 alias upgrade='sudo aptitude full-upgrade'
 
