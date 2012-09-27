@@ -158,13 +158,18 @@ set t_Co=256
 " colorscheme vividchalk
 " colorscheme Tomorrow-Night-Bright 
 " colorscheme zenburn 
- colorscheme jellybeans
+colorscheme jellybeans
 " colorscheme molokai
-" solarized start
-" syntax enable
-" set background = dark
-" colorscheme solarized
-" solarized END
+"""" solarized start
+ "syntax enable
+""if has('gui_running')
+""set background=light
+""else
+"set background=dark
+""endif
+""let g:solarized_termcolors=256
+"colorscheme solarized
+"""" solarized END
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
 " powerline
