@@ -145,10 +145,12 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'chriskempson/tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'twerth/ir_black'
 Bundle 'molokai'
-Bundle 'rainbow.zip'
 Bundle 'wombat256.vim'
 Bundle 'xoria256.vim'
+Bundle 'peaksea'
+Bundle 'fruity.vim'
 
 set laststatus=2 
 " add colors
