@@ -180,7 +180,7 @@ let g:Powerline_symbols = 'fancy'
 cmap w!! %!sudo tee > /dev/null %
 " Ctrlp mappings
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPBuffer' " opens ctrlp in buffer mode rather than filesmode
 " no welcome message
 set shortmess+=I
 
