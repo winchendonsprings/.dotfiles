@@ -160,8 +160,8 @@ set t_Co=256
 " colorscheme vividchalk
 " colorscheme Tomorrow-Night-Bright 
 " colorscheme zenburn 
-colorscheme jellybeans
-" colorscheme molokai
+" colorscheme jellybeans
+colorscheme molokai
 """" solarized start
  "syntax enable
 ""if has('gui_running')
