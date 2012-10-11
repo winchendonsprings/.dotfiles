@@ -135,14 +135,17 @@ filetype plugin indent on     " required!
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+"Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'AutoComplPop'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-vividchalk'
+"Bundle 'Shougo/neocomplcache'
+Bundle 'myusuf3/numbers.vim'
 Bundle 'qqshfox/inkpot'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'tpope/vim-vividchalk'
 Bundle 'chriskempson/tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'twerth/ir_black'
@@ -183,6 +186,8 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer' " opens ctrlp in buffer mode rather than filesmode
 " no welcome message
 set shortmess+=I
+"" start neocomplcache on start
+"let g:neocomplcache_enable_at_startup = 1
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
