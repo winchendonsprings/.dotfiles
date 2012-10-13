@@ -188,6 +188,8 @@ let g:ctrlp_cmd = 'CtrlPBuffer' " opens ctrlp in buffer mode rather than filesmo
 set shortmess+=I
 "" start neocomplcache on start
 "let g:neocomplcache_enable_at_startup = 1
+"" show line numbers
+"set number
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
