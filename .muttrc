@@ -94,10 +94,16 @@ set sort_browser=reverse-date # show mbox list default to newest first
 set sort_aux=last-date-received # showing threads with youngest message last
 # goobook
 set query_command="goobook query '%s'"
-# tab completion of query
+# add sender to google contacts
+macro index,pager a "<pipe-message>goobook add<return>"# tab completion of query
+# tab completion of contacts from address field
 bind editor <Tab> complete-query
 # read/new is good enough for me
 unset mark_old
+# use ctrl+b to view urls
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+# use lynx (from .mailcap) to view html mails
+auto_view text/html
 
 
 # Zenburn colors
