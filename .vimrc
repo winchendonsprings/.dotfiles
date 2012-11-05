@@ -190,6 +190,10 @@ set shortmess+=I
 "let g:neocomplcache_enable_at_startup = 1
 "" show line numbers
 "set number
+" NERTree shortcut
+nmap <leader>nt :NERDTree<cr>
+" Show hidden files in nerdtree by default
+let NERDTreeShowHidden=1
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
