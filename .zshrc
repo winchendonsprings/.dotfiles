@@ -17,6 +17,8 @@ alias cl='clear'
 alias ack='ack-grep'
 alias update='sudo aptitude update'
 alias upgrade='sudo aptitude full-upgrade'
+alias offlineimap bl='offlineimap -u blinkenlights'
+alias offlineimap tty='offlineimap -u tty.ttyui'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
