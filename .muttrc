@@ -103,6 +103,10 @@ macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 auto_view text/html
 # Zenburn colors
 source /home/ry/.mutt-zenburn.muttrc
+# shortcuts to Folders
+macro index ga  "<change-folder> =[Gmail].All Mail<enter>"
+macro index gi  "<change-folder> =INBOX<enter>"
+macro index gv  "<change-folder> =GV<enter>"
 
 #==============================#
 ## solarizedi colors below
