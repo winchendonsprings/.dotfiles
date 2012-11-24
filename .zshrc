@@ -15,10 +15,10 @@ ZSH=$HOME/.oh-my-zsh
 alias tmux='tmux -2'
 alias cl='clear'
 alias ack='ack-grep'
-alias update='sudo aptitude update'
-alias upgrade='sudo aptitude full-upgrade'
+alias update='sudo aptitude update && sudo aptitude full-upgrade'
+# alias upgrade='sudo aptitude full-upgrade'
 alias offlineimap bl='offlineimap -u blinkenlights'
-alias offlineimap tty='offlineimap -u tty.ttyui'
+alias offlineimap tty='offlineimap -u ttyui'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
