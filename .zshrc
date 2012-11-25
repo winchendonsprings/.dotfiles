@@ -16,7 +16,7 @@ alias tmux='tmux -2'
 alias cl='clear'
 alias ack='ack-grep'
 alias update='sudo aptitude update && sudo aptitude full-upgrade'
-# alias upgrade='sudo aptitude full-upgrade'
+alias upgrade='sudo aptitude full-upgrade'
 alias offlineimap bl='offlineimap -u blinkenlights'
 alias offlineimap tty='offlineimap -u ttyui'
 
