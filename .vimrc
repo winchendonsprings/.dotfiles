@@ -146,7 +146,7 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'qqshfox/inkpot'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'chriskempson/tomorrow-theme'
+Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'twerth/ir_black'
 Bundle 'molokai'
@@ -162,20 +162,21 @@ set t_Co=256
 " colorscheme inkpot
 " colorscheme vividchalk
 " colorscheme Tomorrow-Night-Bright 
-colorscheme Tomorrow-Night
+ colorscheme Tomorrow-Night
 " colorscheme zenburn 
 " colorscheme jellybeans
-"colorscheme molokai
-"""" solarized start
- "syntax enable
-""if has('gui_running')
-""set background=light
-""else
-"set background=dark
-""endif
-""let g:solarized_termcolors=256
-"colorscheme solarized
-"""" solarized END
+" colorscheme molokai
+	"""" solarized START 
+	"syntax enable
+	"if has('gui_running')
+	"set background=light
+	"else
+	"set background=dark
+	"endif
+	""set t_Co=16
+	"let g:solarized_termcolors=16
+	"colorscheme solarized
+	"""" solarized END
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
 " powerline
