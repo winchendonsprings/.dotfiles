@@ -158,10 +158,11 @@ Bundle 'fruity.vim'
 set laststatus=2 
 " add colors
 set t_Co=256
-colorscheme hybrid
+" colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
 " colorscheme Tomorrow-Night-Bright 
+colorscheme Tomorrow-Night
 " colorscheme zenburn 
 " colorscheme jellybeans
 "colorscheme molokai
