@@ -12,13 +12,17 @@ ZSH=$HOME/.oh-my-zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tmux='tmux -2'
+alias tmux='tmux -2' #for 256 color
 alias cl='clear'
+alias clock='tty-clock -s'
 alias ack='ack-grep'
 alias update='sudo aptitude update && sudo aptitude full-upgrade'
 alias upgrade='sudo aptitude full-upgrade'
 alias offlineimap bl='offlineimap -u blinkenlights'
-alias offlineimap tty='offlineimap -u ttyui'
+#alias offlineimap ='offlineimap -u ttyui'
+alias weather='sh weatherpdx.sh'
+alias sudo aptitude='nocorrect sudo aptitude'
+alias aptitude='nocorrect aptitude'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
