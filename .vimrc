@@ -197,6 +197,7 @@ set shortmess+=I
 nmap <leader>nt :NERDTree<cr>
 " Show hidden files in nerdtree by default
 let NERDTreeShowHidden=1
+" easymotion is <leader><leader>w or <leader><leader>b etc...
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
