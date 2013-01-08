@@ -1,0 +1,64 @@
+XTerm*background:   #030303
+XTerm*foreground:   #E6E6E6
+XTerm*cursorColor:  #B1DD7F
+XTerm*faceSize:     10
+Xterm*faceName:	   Ubuntu\ Mono:pixelsize=10 
+
+! Xft settings ----------------------------
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+!------------------------------------------
+
+!
+! URXVT - Settings
+URxvt.scrollBar:False
+xvt*saveline: 15000
+URxvt*termName: rxvt-256color
+URxvt*iso14755: false
+URxvt.geometry: 84x44
+URxvt.letterSpace: -2
+URxvt.perl-lib: /.urxvt/urxvt-perls/
+
+! appearance
+URxvt*depth: 32
+!URxvt*background: rgba:0000/0000/0000/DDDD
+!URxvt*foreground: AntiqueWhite
+URxvt*background: Black
+URxvt*foreground: Green
+URxvt.underlineColor: #4682B4
+URxvt.highlightColor: #4682B4
+URxvt.throughColor: Blue
+URxvt*cursorColor: Green
+URxvt*cursorColor2: Black
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+
+! colors
+URxvt*color0: #2e3436
+URxvt*color1: #cc0000
+URxvt*color2: #4e9a06
+URxvt*color3: #c4a000
+URxvt*color4: #3465a4
+URxvt*color5: #75507b
+URxvt*color6: #0b939b
+URxvt*color7: #d3d7cf
+URxvt*color8: #555753
+URxvt*color9: #ef2929
+URxvt*color10: #8ae234
+URxvt*color11: #fce94f
+URxvt*color12: #729fcf
+URxvt*color13: #ad7fa8
+URxvt*color14: #00f5e9
+URxvt*color15: #eeeeec
+
+! fonts
+URxvt*font: xft:Monaco for Powerline:regular:size=8
+URxvt*imFont: xft:Monaco for Powerline:regular:size=8
+URxvt*boldFont: xft:Monaco for Powerline:regular:size=8
+URxvt*italicFont: xft:Monaco for Powerline:italic:size=8
+URxvt*boldItalicFont: xft:Monaco for Powerline:bold:italic:size=8
