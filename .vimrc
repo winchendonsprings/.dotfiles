@@ -154,7 +154,7 @@ Bundle 'wombat256.vim'
 Bundle 'xoria256.vim'
 Bundle 'peaksea'
 Bundle 'fruity.vim'
-Bundle 'zenburn.vim'
+"Bundle 'zenburn.vim'
 
 set laststatus=2 
 " add colors
