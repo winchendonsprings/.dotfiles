@@ -12,17 +12,39 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 !------------------------------------------
 
-!
 ! URXVT - Settings
-URxvt.scrollBar:False
-xvt*saveline: 15000
+!load scripts
+URxvt.perl-lib: /home/ry/.urxvt/urxvt-perls/
+URxvt*saveline: 15000
 URxvt*termName: rxvt-256color
 URxvt*iso14755: false
-URxvt.geometry: 84x44
-URxvt.letterSpace: -2
-URxvt.perl-lib: /.urxvt/urxvt-perls/
+URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
+
+!keyboard select
+!is the ... needed?
+!URxvt.perl-ext-common: ...,clipboard,default,keyboard-select,matcher,url-select
+URxvt.perl-ext-common: default,clipboard,keyboard-select,matcher,url-select
+!URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!url-select
+!URxvt.keysym.M-u: perl:url-select:select_next
+!clipboard
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+!clickable urls
+!URxvt.url-launcher: /usr/bin/firefox
+!URxvt.matcher.button: 1
+!yankable urls
+!URxvt.perl-ext:      default,url-select
+!URxvt.keysym.M-u:    perl:url-select:select_next
+!URxvt.url-select.launcher:   /usr/bin/firefox -new-tab
+!URxvt.url-select.underline: true
+!Next three lines make ocopy and paste with keyboard doable
+!URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 ! appearance
+URxvt.geometry: 84x44
+URxvt.letterSpace: -2
 URxvt*depth: 32
 !URxvt*background: rgba:0000/0000/0000/DDDD
 !URxvt*foreground: AntiqueWhite
@@ -37,6 +59,7 @@ URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*internalBorder: 0
 URxvt*externalBorder: 0
+URxvt*borderLess: false
 
 ! colors
 URxvt*color0: #2e3436
