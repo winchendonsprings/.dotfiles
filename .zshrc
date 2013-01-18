@@ -47,3 +47,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 DEFAULT_USER='ry'
 
+# this will display the pwd in TMUX
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
