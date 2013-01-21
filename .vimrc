@@ -197,7 +197,19 @@ set shortmess+=I
 nmap <leader>nt :NERDTree<cr>
 " Show hidden files in nerdtree by default
 let NERDTreeShowHidden=1
-" easymotion is <leader><leader>w or <leader><leader>b etc...
+"note to self easymotion is <leader><leader>w or <leader><leader>b etc...
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+"Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 

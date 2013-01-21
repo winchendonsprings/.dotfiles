@@ -8,19 +8,36 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+#alias zshconfig="mate ~/.zshrc"
+#alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux='tmux -2' #for 256 color
 alias cl='clear'
 alias clock='tty-clock -s'
 alias ack='ack-grep'
-alias update='sudo aptitude update && sudo aptitude full-upgrade'
-alias upgrade='sudo aptitude full-upgrade'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
+#alias update='sudo aptitude update && sudo aptitude full-upgrade'
+#alias upgrade='sudo aptitude full-upgrade'
 alias offlineimap bl='offlineimap -u blinkenlights'
 #alias offlineimap ='offlineimap -u ttyui'
-alias weather='sh weatherpdx.sh'
+alias weather='sh ~/Documents/weatherpdx.sh'
 alias sudo aptitude='nocorrect sudo aptitude'
 alias aptitude='nocorrect aptitude'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+#show frequntly used commands
+alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30'
+#show only folders
+alias lf='ls -Gl | grep ^d' #Only list directories
+alias lsd='ls -Gal | grep ^d' #Only list directories, including hidden ones
+#alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''  #recursively list all of the files in a directory - tree does this better
+#pretty git logs
+alias gitl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gil="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias lg="git log --graph --full-history --all --color --pretty=format:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s'"
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
