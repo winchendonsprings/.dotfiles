@@ -2,17 +2,16 @@
 accounts = winchendonsprings
 maxsyncaccounts = 1
 socktimeout = 60
-ui = ttyui
-# ui = blinkenlights
+#ui = ttyui
+ui = blinkenlights
 
 [Account winchendonsprings]
 localrepository = local-winchendonsprings
 remoterepository = remote-winchendonsprings
-autorefresh = 5
-maxage = 45
-# maxsize = 100000
-# Number of quick-syncs between autorefreshes. Quick-syncs do not update if the only changes were to IMAP flags
-#quick = 2
+autorefresh = 10
+maxage = 30
+#maxsize = 100000
+#quick = 4
 
 [Repository local-winchendonsprings]
 type = Maildir
@@ -26,5 +25,55 @@ remoteuser = winchendonsprings@gmail.com
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 realdelete = no 
-# Instead of closing the connection once a sync is complete, offlineimap will send empty data to the server to hold the connection open. A value of 60 attempts to hold the connection for a minute between syncs (both quick and autorefresh)
-# keepalive = 60
+
+# In between synchronisations, OfflineIMAP can monitor mailboxes for new
+# messages using the IDLE command. If you want to enable this, specify here
+# the folders you wish to monitor. Note that the IMAP protocol requires a
+# separate connection for each folder monitored in this way, so setting
+# this option will force settings for:
+#     maxconnections - to be at least the number of folders you give
+#     holdconnectionopen - to be true
+#     keepalive - to be 29 minutes unless you specify otherwise
+#
+# This feature isn't complete and may well have problems. BE AWARE THIS
+# IS EXPERIMENTAL STUFF.  See the manual for more details.
+#
+# This option should return a Python list. For example
+#
+# idlefolders = ['INBOX', 'INBOX.Alerts']
+#
+#ryan
+idlefolders = ['[Gmail]/All Mail']
+
+# You can specify which folders to sync using the folderfilter
+# setting. You can provide any python function (e.g. a lambda function)
+# which will be invoked for each foldername. If the filter function
+# returns True, the folder will be synced, if it returns False, it. The
+# folderfilter operates on the *UNTRANSLATED* name (before any nametrans
+# translation takes place).
+#
+# Example 1: synchronizing only INBOX and Sent.
+#
+# folderfilter = lambda foldername: foldername in ['INBOX', 'Sent']
+#
+# Example 2: synchronizing everything except Trash.
+#
+# folderfilter = lambda foldername: foldername not in ['Trash']
+#
+# Example 3: Using a regular expression to exclude Trash and all folders
+# containing the characters "Del".
+#
+# folderfilter = lambda foldername: not re.search('(^Trash$|Del)', foldername)
+#
+# If folderfilter is not specified, ALL remote folders will be
+# synchronized.
+#
+# You can span multiple lines by indenting the others.  (Use backslashes
+# at the end when required by Python syntax)  For instance:
+#
+# folderfilter = lambda foldername: foldername in
+#        ['INBOX', 'Sent Mail', 'Deleted Items',
+#         'Received']
+#
+#ryan
+folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCA', 'GV']

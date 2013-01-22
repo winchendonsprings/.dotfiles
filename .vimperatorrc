@@ -1,6 +1,6 @@
 set defsearch=d
 set gui=none
-colorscheme=ryan
+colorscheme ryan
 "set editor=vim -f
 "scrollbars=off
 "removes popup at bottom
