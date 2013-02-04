@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux='tmux -2' #for 256 color
 alias cl='clear'
+alias p='pwd'
 alias clock='tty-clock -s'
 alias ack='ack-grep'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
