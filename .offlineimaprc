@@ -2,8 +2,8 @@
 accounts = winchendonsprings
 maxsyncaccounts = 1
 socktimeout = 60
-#ui = ttyui
-ui = blinkenlights
+ui = ttyui
+#ui = blinkenlights
 
 [Account winchendonsprings]
 localrepository = local-winchendonsprings
