@@ -1,5 +1,6 @@
 set defsearch=d
 set gui=none
+set hintchars=qwertyuiopasdfghjkl
 colorscheme ryan
 "set editor=vim -f
 "scrollbars=off
