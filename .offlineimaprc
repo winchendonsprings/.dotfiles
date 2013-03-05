@@ -43,7 +43,7 @@ realdelete = no
 # idlefolders = ['INBOX', 'INBOX.Alerts']
 #
 #ryan
-idlefolders = ['[Gmail]/All Mail']
+idlefolders = ['INBOX', 'LCA', 'GV']
 
 # You can specify which folders to sync using the folderfilter
 # setting. You can provide any python function (e.g. a lambda function)
