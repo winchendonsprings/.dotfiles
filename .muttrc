@@ -100,5 +100,7 @@ macro index gl "<change-folder>=LCA<enter>" "Go to google left-click folder"
 #source ~/.mutt/mutt_colors # In their own file
 #source /home/ry/.mutt/mutt-zenburn.colors
 #source /home/ry/.mutt/colors.ryan
-source /home/ry/.mutt/ir_pink.theme
+#source /home/ry/.mutt/ir_pink.theme
+#source /home/ry/.mutt/ir_blue.theme
+source /home/ry/.mutt/ir_green.theme
 #==============================#
