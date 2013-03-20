@@ -4,13 +4,7 @@ set hintchars=asdfghjkl
 colorscheme ryan
 "set editor=vim -f
 "scrollbars=off
-"removes popup at bottom
+""removes popup at bottom
 "set autocomplete=false
+set complete=s
 
-" QMarks 
-"silent qmark f http://facebook.com/
-"silent qmark h http://news.ycombinator.com/ 
-"silent qmark d http://duckduckgo.com/ 
-"silent qmark g http://google.com/ 
-"silent qmark r http://google.com/reader 
-"silent qmark fe http://www.feedly.com/home
