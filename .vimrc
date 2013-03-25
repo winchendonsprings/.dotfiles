@@ -196,6 +196,7 @@ set shortmess+=I
 "set number
 " NERTree shortcut
 nmap <leader>nt :NERDTree<cr>
+nmap <leader>ntc :NERDTreeClose<cr>
 " Show hidden files in nerdtree by default
 let NERDTreeShowHidden=1
 "note to self easymotion is <leader><leader>w or <leader><leader>b etc...
