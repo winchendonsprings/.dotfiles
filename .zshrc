@@ -12,7 +12,7 @@ ZSH_THEME="simple"
 #alias zshconfig="mate ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux='tmux -2' #for 256 color
-alias cl='clear'
+#alias cl='clear'
 alias p='pwd'
 alias clock='tty-clock -s'
 alias ack='ack-grep'
@@ -61,7 +61,7 @@ alias lg="git log --graph --full-history --all --color --pretty=format:'%x1b[31m
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump)
+plugins=(git git-extras autojump command-not-found debian extract)
 
 source $ZSH/oh-my-zsh.sh
 
