@@ -48,16 +48,16 @@ URxvt.letterSpace: -2
 URxvt*depth: 32
 !URxvt*background: rgba:0000/0000/0000/DDDD
 !URxvt*foreground: AntiqueWhite
-URxvt*background: Black
-URxvt*foreground: Green
+URxvt*background: #121212
+URxvt*foreground: #eeeeee
 URxvt.underlineColor: #4682B4
 URxvt.highlightColor: #4682B4
 URxvt.throughColor: Blue
-URxvt*cursorColor: Green
+URxvt*cursorColor: White
 URxvt*cursorColor2: Black
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
-URxvt*internalBorder: 0
+URxvt*internalBorder: 1
 URxvt*externalBorder: 0
 URxvt*borderLess: false
 
