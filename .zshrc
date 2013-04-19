@@ -11,7 +11,8 @@ ZSH_THEME="simple"
 # Example aliases
 #alias zshconfig="mate ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tmux='tmux -2' #for 256 color
+######alias tmux='tmux -2' #for 256 color
+export TERM=screen-256color
 #alias cl='clear'
 alias p='pwd'
 alias clock='tty-clock -s'
@@ -37,6 +38,10 @@ alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 
 alias lf='ls -Gl | grep ^d' #Only list directories
 alias lsd='ls -Gal | grep ^d' #Only list directories, including hidden ones
 #alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''  #recursively list all of the files in a directory - tree does this better
+alias la='ls -lAFh'   #long list,show almost all,show type,human readable
+alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
+#alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
+alias lr='ls -trlaFh'   #sorted by date,ciwreverse,show type,human readable
 #pretty git logs
 alias gitl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gil="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -61,7 +66,7 @@ alias lg="git log --graph --full-history --all --color --pretty=format:'%x1b[31m
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras autojump command-not-found debian extract)
+plugins=(git git-extras autojump command-not-found debian extract tmux vundle)
 
 source $ZSH/oh-my-zsh.sh
 
