@@ -35,13 +35,14 @@ alias k9='kill -9'
 #show frequntly used commands
 alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30'
 #show only folders
+alias l='ls -lah'
 alias lf='ls -Gl | grep ^d' #Only list directories
 alias lsd='ls -Gal | grep ^d' #Only list directories, including hidden ones
 #alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''  #recursively list all of the files in a directory - tree does this better
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 #alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
-alias lr='ls -trlaFh'   #sorted by date,ciwreverse,show type,human readable
+alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
 #pretty git logs
 alias gitl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gil="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
