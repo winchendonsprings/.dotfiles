@@ -87,6 +87,7 @@ endif
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 
+"F
 """"""""""""""""""" For Vundle --- There may be duplicates
 
 set nocompatible               " be iMproved
@@ -212,10 +213,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Easier split navigations, instead of ctrl-w then j, it’s just ctrl-j:
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 " More natural split opening open new split panes to right and bottom, which feels more natural than Vim’s default:
 set splitbelow
@@ -223,6 +224,9 @@ set splitright
 
 " Change vims directory when navigatin new files
 set autochdir
+
+" syntastic enabled
+"let g:syntastic_check_on_open=1
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
