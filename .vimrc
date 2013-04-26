@@ -99,19 +99,10 @@ call vundle#rc()
 " required! 
  Bundle 'gmarik/vundle'
 
-" My Bundles here:
-
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
-" ...
  
 filetype plugin indent on     " required!
 
@@ -133,33 +124,43 @@ filetype plugin indent on     " required!
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
 
+"" plugins
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 Bundle 'AutoComplPop'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-vividchalk'
-"Bundle 'Shougo/neocomplcache'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'airblade/vim-gitgutter'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+"Bundle 'Shougo/neocomplcache'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+
+"" themes
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-vividchalk'
 Bundle 'qqshfox/inkpot'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'twerth/ir_black'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'molokai'
 Bundle 'wombat256.vim'
 Bundle 'xoria256.vim'
 Bundle 'peaksea'
 Bundle 'fruity.vim'
-"Bundle 'zenburn.vim'
 
 set laststatus=2 
+
 " add colors
 set t_Co=256
+
 " colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
@@ -168,6 +169,7 @@ set t_Co=256
 " colorscheme zenburn 
 " colorscheme jellybeans
 " colorscheme molokai
+
 	"""" solarized START 
 	"syntax enable
 	"if has('gui_running')
@@ -179,26 +181,36 @@ set t_Co=256
 	"let g:solarized_termcolors=16
 	"colorscheme solarized
 	"""" solarized END
+
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
+
 " powerline
 let g:Powerline_symbols = 'fancy'
+
 " allows :w!! to save if you forgot to open a readonly without perms
 cmap w!! %!sudo tee > /dev/null %
+
 " Ctrlp mappings
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer' " opens ctrlp in buffer mode rather than filesmode
+
 " no welcome message
 set shortmess+=I
+
 "" start neocomplcache on start
 "let g:neocomplcache_enable_at_startup = 1
+"
 "" show line numbers
 "set number
+"
 " NERTree shortcut
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>ntc :NERDTreeClose<cr>
+
 " Show hidden files in nerdtree by default
 let NERDTreeShowHidden=1
+
 "note to self easymotion is <leader><leader>w or <leader><leader>b etc...
 
 "" Opens a new tab with the current buffer's path
@@ -206,10 +218,10 @@ let NERDTreeShowHidden=1
 "map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 "Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 " Easier split navigations, instead of ctrl-w then j, it’s just ctrl-j:
 nnoremap <C-J> <C-W><C-J>
