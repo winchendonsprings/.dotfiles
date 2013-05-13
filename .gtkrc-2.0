@@ -1,0 +1,5 @@
+#ryan
+gtk-icon-theme-name = "Faience-Azur"
+gtk-theme-name = "Greybird"
+gtk-font-name = "DejaVu Sans 8"
+gtk-toolbar-style   = GTK_TOOLBAR_TEXT	#Only text 
