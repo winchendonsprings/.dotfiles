@@ -165,8 +165,8 @@ set t_Co=256
 " colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
-" colorscheme Tomorrow-Night-Bright 
- colorscheme Tomorrow-Night
+ colorscheme Tomorrow-Night-Bright 
+" colorscheme Tomorrow-Night
 " colorscheme zenburn 
 " colorscheme jellybeans
 " colorscheme molokai
@@ -239,6 +239,10 @@ set autochdir
 
 " syntastic enabled
 "let g:syntastic_check_on_open=1
+
+" change tab size from 8 spaces to 4
+set tabstop=4
+
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
