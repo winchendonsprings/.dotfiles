@@ -1,0 +1,572 @@
+/* Import original gnome-shell theme */
+/*@import url("original/gnome-shell.css");*/
+@import url("/usr/share/gnome-shell/theme/gnome-shell.css");
+
+/* Images */
+@import url("img/images.css");
+
+/* Tweaks */
+/** {*/
+    /*transition-duration: 0;*/
+    /*caret-color: rgba(255,255,255,.7);*/
+    /*caret-size: 1.3px;*/
+/*}*/
+
+/*#overview {*/
+    /*background-image: url("original/noise-texture.png");*/
+    /*background-repeat: repeat;*/
+/*}*/
+
+/* Fonts */
+/*stage {*/
+    /*font-family: "Droid Sans", Ubuntu, cantarell, Sans;*/
+/*}*/
+
+/* Search box */
+/*#searchEntry,*/
+/*.notification StEntry,*/
+/*.login-dialog-prompx-entry,*/
+/*.prompx-dialog-password-entry {*/
+    /*color: rgba(255,255,255,.4);*/
+    /*border: 2px solid rgba(255,255,255,.1);*/
+    /*border-radius: 5px;*/
+    /*background: transparent;*/
+    /*background-gradient-direction: none;*/
+    /*box-shadow: inset 0 2px 7px rgba(0,0,0,.1);*/
+/*}*/
+
+/*#searchEntry:focus,*/
+/*#searchEntry:hover,*/
+/*.notification StEntry:focus,*/
+/*.login-dialog-prompx-entry,*/
+/*.prompx-dialog-password-entry {*/
+    /*color: rgba(255,255,255,.7);;*/
+    /*border: inherit;*/
+    /*background: inherit;*/
+    /*background-gradient-direction: none;*/
+    /*box-shadow: inset 0 2px 7px rgba(0,0,0,.4);*/
+/*}*/
+
+/*.search-entry-icon {*/
+    /*icon-size: 1px;*/
+/*}*/
+
+/* Dash & Apps*/
+/*#dash {*/
+    /*border-color: rgba(0,0,0,0.0);*/
+    /*background-color: rgba(0,0,0,0.0);*/
+    /*}*/
+
+/*.workspace-thumbnails-background {*/
+    /*border-color: rgba(0,0,0,0.0);*/
+    /*background-color: rgba(0,0,0,0.3);*/
+/*}*/
+
+/*.app-well-app.running > .overview-icon {*/
+    /*background-image: none;*/
+    /*background-color: transparent;*/
+/*}*/
+
+/*.app-well-app.running:hover > .overview-icon {*/
+    /*background-color: rgba(255,255,255,0.1);*/
+/*}*/
+
+/*#dash .app-well-app.running {*/
+    /*background-image: url("img/running-app-dash.svg");*/
+    /*background-size: contain;*/
+/*}*/
+
+/*#dash .app-well-app.running:rtl {*/
+    /*background-image: url("img/running-app-dash-right.svg");*/
+    /*background-size: contain;*/
+/*}*/
+
+/*.app-well-app > .overview-icon,*/
+/*.remove-favorite > .overview-icon,*/
+/*.search-result-content > .overview-icon {*/
+    /*background-image: url("img/app-indicator-shadow.svg");*/
+    /*background-size: contain;*/
+/*}*/
+
+/*.overview-icon {*/
+    /*border: 1px solid transparent;*/
+/*}*/
+
+/*.app-well-app:focus > .overview-icon,*/
+/*.search-result-content:focus > .overview-icon,*/
+/*.app-well-app:selected > .overview-icon,*/
+/*.search-result-content:selected > .overview-icon,*/
+/*.search-result-content:hover > .overview-icon,*/
+/*.app-well-app:hover > .overview-icon,*/
+/*.all-app .app-well-app.running > .overview-icon {*/
+    /*border-color: rgba(0,0,0,.1);*/
+    /*background-color: transparent;*/
+    /*background-image: url("img/running-indicator.svg");*/
+    /*box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.1);*/
+/*}*/
+
+/*.all-app .app-well-app:hover.running > .overview-icon,*/
+/*.search-result-content:focus:hover > .overview-icon,*/
+/*.search-result-content:selected:hover > .overview-icon,*/
+/*.app-well-app:focus:hover > .overview-icon,*/
+/*.app-well-app:selected:hover > .overview-icon {*/
+    /*background-color: rgba(255,255,255,.2);*/
+/*}*/
+
+/*.overview-icon {*/
+    /*text-shadow: rgba(0,0,0,.5) 0px 1px 1px;*/
+/*}*/
+
+/*.search-section-header {*/
+    /*color: rgba(255,255,255,.5);*/
+/*}*/
+
+/* Scrollbar */
+/*StScrollView StScrollBar {*/
+    /*min-width: 5px;*/
+    /*min-height: 5px;*/
+/*}*/
+
+/*StScrollBar StBin#trough {*/
+    /*background-color: rgba(0,0,0,0.15);*/
+    /*border-radius: 5px;*/
+/*}*/
+
+/*StScrollBar StButton#vhandle,*/
+/*StScrollBar StButton#hhandle {*/
+    /*background-color: rgba(255,255,255,.2);*/
+    /*border: 0;*/
+    /*border-radius: 5px;*/
+/*}*/
+
+/* Popup menu */
+/*.popup-submenu-menu-item:open {*/
+    /*background-color: transparent;*/
+/*}*/
+
+/*.popup-menu-item:hover {*/
+    /*background: rgba(255,255,255,.1);*/
+/*}*/
+
+/*.popup-sub-menu {*/
+    /*background-gradient-direction: none;*/
+    /*background: #272727 url("img/texture.png");*/
+    /*background-repeat: repeat;*/
+    /*box-shadow: inset 0 2px 10px rgba(0,0,0,0.7);*/
+    /*border-top: 1px solid #202020;*/
+/*}*/
+
+/*.popup-separator-menu-item {*/
+    /*-gradient-height: 1px;*/
+    /*-gradient-start: rgba(255,255,255,.1);*/
+    /*-gradient-end: rgba(255,255,255,.1);*/
+    /*-margin-horizontal: 0;*/
+    /*height: 1em;*/
+/*}*/
+
+/* Slider */
+/*.popup-slider-menu-item {*/
+    /*-slider-background-color: #292929;*/
+    /*-slider-border-color: #454545;*/
+    /*-slider-active-background-color: #3296dc;*/
+    /*-slider-active-border-color: #3296dc;*/
+    /*-slider-border-width: 1px;*/
+    /*-slider-handle-radius: .5em;*/
+/*}*/
+
+/* Buttons */
+/*.dash-search-button,*/
+/*.notification-button,*/
+/*.notification-icon-button,*/
+/*.hotplug-notification-item,*/
+/*.hotplug-resident-eject-button,*/
+/*.modal-dialog-button {*/
+    /*background-gradient-direction: none;*/
+    /*border: 0;*/
+    /*border-top: 1px solid rgba(255,255,255,0.2);*/
+    /*background-color: rgba(255,255,255,0.07);*/
+    /*border-radius: 2px;*/
+    /*box-shadow: inset 0px 3px 5px 1px rgba(255,255,255,0.05);*/
+    /*padding: 5px 10px;*/
+/*}*/
+
+/*.dash-search-button:hover,*/
+/*.notification-button:hover,*/
+/*.notification-icon-button:hover,*/
+/*.hotplug-notification-item:hover,*/
+/*.hotplug-resident-eject-button:hover,*/
+/*.modal-dialog-button:hover {*/
+    /*padding: inset;*/
+    /*border-top-color: rgba(255,255,255,0.3);*/
+    /*background-color: rgba(255,255,255,0.12);*/
+/*}*/
+
+/*.dash-search-button:selected,*/
+/*.dash-search-button:focus,*/
+/*.notification-button:focus,*/
+/*.notification-icon-button:focus,*/
+/*.hotplug-notification-item:focus,*/
+/*.modal-dialog-button:focus {*/
+    /*padding: inherit;*/
+    /*border-top-color: rgba(0,160,255, 0.4);*/
+/*}*/
+
+/*.dash-search-button:active,*/
+/*.dash-search-button:pressed,*/
+/*.notification-button:active,*/
+/*.notification-icon-button:active,*/
+/*.hotplug-notification-item:active,*/
+/*.hotplug-resident-eject-button:active,*/
+/*.modal-dialog-button:active,*/
+/*.modal-dialog-button:pressed {*/
+    /*background-color: rgba(255,255,255,0.07);*/
+/*}*/
+
+/* Popup dialog borders */
+/*.popup-menu-boxpointer,*/
+/*.summary-boxpointer,*/
+/*.keyboard-subkeys*/
+/*{*/
+    /*-arrow-background-color: #111;*/
+    /*-arrow-border-width: 2px;*/
+    /*-arrow-border-color: rgba(255,2255,255,0.8);*/
+/*}*/
+
+/*.workspace-switcher-container,*/
+/*.switcher-list,*/
+/*.modal-dialog,*/
+/*.run-dialog*/
+/*{*/
+    /*background: #111;*/
+    /*border-radius: 8px;*/
+    /*border-width: 2px;*/
+    /*border-color: rgba(255,2255,255,0.8);*/
+/*}*/
+/*.summary-boxpointer #notification {*/
+    /*border-width: 0px;*/
+/*}*/
+/*#notification {*/
+    /*border-width: 2px;*/
+    /*border-bottom-width: 0px;*/
+    /*border-color: rgba(255,255,255,0.8);*/
+/*}*/
+
+/* Input */
+/*.run-dialog-label,*/
+/*.run-dialog-error-label {*/
+    /*padding-bottom: 10px;*/
+/*}*/
+
+/*.run-dialog-error-box {*/
+    /*padding-top: 15px;*/
+    /*spacing: 5px;*/
+/*}*/
+/*.run-dialog-entry,*/
+/*.prompt-dialog-password-entry {*/
+    /*caret-color: rgba(0,0,0,0.4);*/
+    /*caret-size: 1px;*/
+    /*font-weight: bold;*/
+    /*width: 23em;*/
+    /*padding: 4px;*/
+    /*color: black;*/
+    /*background-color: white;*/
+    /*border: 2px solid rgb(50,150,220);*/
+    /*border-radius: 5px;*/
+    /*selection-background-color: white;*/
+    /*selected-color: black;*/
+    /*box-shadow: inset 0 0 0 rgba(0,0,0,.0);*/
+/*}*/
+
+/* Password or Authentication Dialog */
+/*.prompt-dialog-headline {*/
+    /*color: #c03;*/
+/*}*/
+
+/* Chat */
+/*.chat-log-message {*/
+    /*color: #888888;*/
+/*}*/
+
+/*.chat-group-sent, .chat-group-meta {*/
+    /*padding: 8px 0;*/
+/*}*/
+
+/*.chat-received {*/
+    /*border-left: 2px;*/
+    /*border-color: #fff;*/
+    /*padding-left: 4px;*/
+/*}*/
+
+/*.chat-received:rtl {*/
+    /*padding-left: 0px;*/
+    /*padding-right: 4px;*/
+/*}*/
+
+/*.chat-sent {*/
+    /*padding-left: 18pt;*/
+    /*color: #959595;*/
+/*}*/
+
+/*.chat-sent:rtl {*/
+    /*padding-left: 0px;*/
+    /*padding-right: 18pt;*/
+/*}*/
+
+/*.chat-meta-message {*/
+    /*padding-left: 4px;*/
+    /*font-size: 9pt;*/
+    /*color: #bbbbbb;*/
+/*}*/
+
+/*.chat-meta-message:rtl {*/
+    /*padding-left: 0px;*/
+    /*padding-right: 4px;*/
+/*}*/
+
+/* Icon grid */
+
+/* Calendar */
+/*.calendar-change-month-back,*/
+/*.calendar-change-month-forward:rtl {*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background-image: url("img/arrow-left.svg");*/
+    /*border-radius: 0;*/
+/*}*/
+
+/*.calendar-change-month-forward,*/
+/*.calendar-change-month-back:rtl {*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background-image: url("img/arrow-right.svg");*/
+    /*border-radius: 0;*/
+/*}*/
+
+/*.calendar-change-month-back:hover,*/
+/*.calendar-change-month-forward:rtl:hover {*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background: transparent;*/
+    /*background-image: url("img/arrow-left-hover.svg");*/
+    /*border-radius: 0;*/
+/*}*/
+
+/*.calendar-change-month-forward:hover,*/
+/*.calendar-change-month-back:rtl:hover {*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background: transparent;*/
+    /*background-image: url("img/arrow-right-hover.svg");*/
+    /*border-radius: 0;*/
+/*}*/
+
+/*.calendar-day {*/
+    /*border-color: #111;*/
+/*}*/
+
+/*.calendar-day-base:hover {*/
+    /*background-color: transparent;*/
+    /*box-shadow: inset 0px 0px 0px 1px rgb(50,150,220);*/
+/*}*/
+
+/*.calendar-day-base:active {*/
+    /*background-color: transparent;*/
+    /*box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.8);*/
+/*}*/
+
+/*.calendar-day-base.calendar-today {*/
+    /*background-image: none;*/
+    /*background-color: rgb(50,150,220);*/
+    /*color: #fff;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.calendar-day-with-events {*/
+    /*background-image: url("img/calendar-events.svg");*/
+    /*background-size: contain;*/
+/*}*/
+
+/* Atl+Tab */
+/*.switcher-list .separator {*/
+    /*border-top: 20px;*/
+    /*border-bottom: 20px;*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: rgba(255,255,255,0.2);*/
+    /*background-gradient-end: rgba(255,255,255,0.1);*/
+    /*border-left: 25px solid transparent;*/
+    /*border-right: 25px solid transparent;*/
+/*}*/
+
+/*.switcher-list .item-box:outlined {*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: rgba(255,255,255,0.05);*/
+    /*background-gradient-end: rgba(255,255,255,0.1);*/
+/*}*/
+
+/*.switcher-list .item-box:selected {*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: rgba(255,255,255,0.05);*/
+    /*background-gradient-end: rgba(255,255,255,0.1);*/
+/*}*/
+
+/* On-screen Keyboard */
+/*.keyboard-key {*/
+    /*border-radius: 4px;*/
+    /*border: 0;*/
+    /*border-top: 1px solid rgba(255,255,255,0.15);*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: rgba(255,255,255,0.1);*/
+    /*background-gradient-end: rgba(255,255,255,0.15);*/
+    /*font-size: 170%;*/
+/*}*/
+
+/*.keyboard-key:checked,*/
+/*.keyboard-key:hover {*/
+    /*border: 0;*/
+    /*border-top: 1px solid rgba(255,255,255,0.25);*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: rgba(255,255,255,0.2);*/
+    /*background-gradient-end: rgba(255,255,255,0.25);*/
+    /*font-size: 170%;*/
+/*}*/
+
+/*.keyboard-key:active {*/
+    /*border: 0;*/
+    /*border-top: 1px solid rgba(255,255,255,0.05);*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: rgba(255,255,255,0.07);*/
+    /*background-gradient-end: rgba(255,255,255,0.1);*/
+    /*font-size: 170%;*/
+/*}*/
+
+/**/
+/*#notification-container .notification {*/
+    /*border-left: 2px solid #fff;*/
+    /*border-right: 2px solid #fff;*/
+    /*border-top: 2px solid #fff;*/
+    /*border-radius: 8px 8px 0 0;*/
+/*}*/
+
+/*.status-chooser-user-icon {*/
+    /*border: 1px solid #000;*/
+    /*box-shadow: inset 0px 1px 2px 0px rgba(255, 255, 255, .2);*/
+    /*border-radius: 4px;*/
+/*}*/
+
+/*[><]*/
+/*.message-button {*/
+    /*padding: 0;*/
+/*}*/
+
+/*.message-label {*/
+    /*text-align: center;*/
+    /*padding: 0;*/
+    /*min-width: 3ex;*/
+    /*border-top: .1ex solid #ff5a44;*/
+    /*border-radius: .5ex;*/
+    /*color: #fff;*/
+    /*background-color: #cc3c29;*/
+    /*background-gradient-direction: vertical;*/
+    /*background-gradient-start: #eb442e;*/
+    /*background-gradient-end: #c12c19;*/
+    /*text-shadow: rbga(0,0,0,.1) 0 .1ex .1ex;*/
+    /*box-shadow: 0 0 .3ex .1ex #000;*/
+/*}*/
+ 
+/***** ryan *****/
+
+#panel {
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    font-size:12px;
+    /*height: 16px;*/
+    height: 14px;
+    color:#fff;
+}
+.panel-button {
+	font-size:12px;
+	color:#fff;
+}
+
+.panel-corner {
+    -panel-corner-radius: 0px;
+}
+
+/*.panel-button {*/
+	/*color:rgba(0,0,0,0.2);*/
+/*}*/
+
+/*.panel-button #appMenu {*/
+	/*display:none;*/
+/*}*/
+.panel-button #appMenuIcon {
+	width:0px;
+	height:0px;
+    	app-icon-bottom-clip: 0px;
+}
+
+/* used for the app menu header only */
+.label-shadow {
+    color: rgba(0,0,0,0);
+}
+
+/* Application Launchers and Grid */
+
+/*.icon-grid {*/
+    /*spacing: 96px;*/
+    /*-shell-grid-horizontal-item-size: 118px;*/
+    /*-shell-grid-vertical-item-size: 118px;*/
+/*}*/
+
+/*.icon-grid .overview-icon {*/
+    /*icon-size: 110px;*/
+    /*padding: 0px;*/
+/*}*/
+
+/* Password or Authentication Dialog */
+
+/*.prompt-dialog {*/
+    /*[> this is the width of the entire modal popup <]*/
+    /*width: 600px;*/
+/*}*/
+
+/*.prompt-dialog-main-layout {*/
+    /*spacing: 24px;*/
+    /*padding: 10px;*/
+/*}*/
+
+/*.prompt-dialog-message-layout {*/
+    /*spacing: 16px;*/
+/*}*/
+
+/*.prompt-dialog-headline {*/
+    /*font-size: 12pt;*/
+    /*font-weight: bold;*/
+    /*color: #666666;*/
+/*}*/
+
+/*.prompt-dialog-password-box {*/
+    /*spacing: 1em;*/
+    /*padding-bottom: 1em;*/
+/*}*/
+
+/*.prompt-dialog-error-label {*/
+    /*font-size: 10pt;*/
+    /*color: #ffff00;*/
+    /*padding-bottom: 8px;*/
+/*}*/
+
+/*.prompt-dialog-info-label {*/
+    /*font-size: 10pt;*/
+    /*padding-bottom: 8px;*/
+/*}*/
+
+/*.hidden {*/
+    /*color: rgba(0,0,0,0);*/
+/*}*/
+
+/*.prompt-dialog-null-label {*/
+    /*font-size: 10pt;*/
+    /*padding-bottom: 8px;*/
+/*}*/
+
