@@ -135,6 +135,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'AutoComplPop'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-haml'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'airblade/vim-gitgutter'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
