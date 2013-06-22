@@ -1,36 +1,32 @@
+! XTerm settings
 XTerm*background:   #030303
 XTerm*foreground:   #E6E6E6
 XTerm*cursorColor:  #B1DD7F
 XTerm*faceSize:     10
 Xterm*faceName:	   Ubuntu\ Mono:pixelsize=10 
 
-! Xft settings ----------------------------
-Xft.dpi: 96
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
-Xft.hintstyle: hintslight
-!------------------------------------------
+
 
 ! URXVT - Settings
 !load scripts
-URxvt.perl-lib: /home/ry/.urxvt/urxvt-perls/
+!URxvt.perl-lib: /home/ry/.urxvt/urxvt-perls/
 URxvt*saveline: 15000
-URxvt*termName: rxvt-256color
+!URxvt*termName: rxvt-256color
+URxvt*termName: urxvt
 URxvt*iso14755: false
-URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
+URxvt*iconFile: /usr/share/icons/Faience/apps/scalable/utilities-terminal.svg
 
 !keyboard select
 !is the ... needed?
 !URxvt.perl-ext-common: ...,clipboard,default,keyboard-select,matcher,url-select
-URxvt.perl-ext-common: default,clipboard,keyboard-select,matcher,url-select
+!URxvt.perl-ext-common: default,clipboard,keyboard-select,matcher,url-select
 !URxvt.keysym.M-Escape: perl:keyboard-select:activate
 !url-select
 !URxvt.keysym.M-u: perl:url-select:select_next
 !clipboard
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.M-v:   perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+!URxvt.keysym.M-c:   perl:clipboard:copy
+!URxvt.keysym.M-v:   perl:clipboard:paste
+!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 !clickable urls
 !URxvt.url-launcher: /usr/bin/firefox
 !URxvt.matcher.button: 1
@@ -43,21 +39,22 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 !URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 ! appearance
-URxvt.geometry: 84x44
-URxvt.letterSpace: -2
+URxvt.geometry: 92x56
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
 URxvt*depth: 32
 !URxvt*background: rgba:0000/0000/0000/DDDD
 !URxvt*foreground: AntiqueWhite
-URxvt*background: #121212
+URxvt*background: #333333
 URxvt*foreground: #eeeeee
-URxvt.underlineColor: #4682B4
-URxvt.highlightColor: #4682B4
+URxvt.underlineColor: Yellow
+URxvt.highlightColor: Orange
 URxvt.throughColor: Blue
 URxvt*cursorColor: White
 URxvt*cursorColor2: Black
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
-URxvt*internalBorder: 1
+URxvt*internalBorder: 4
 URxvt*externalBorder: 0
 URxvt*borderLess: false
 
@@ -79,9 +76,28 @@ URxvt*color13: #ad7fa8
 URxvt*color14: #00f5e9
 URxvt*color15: #eeeeec
 
+! Xft settings ----------------------------
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+!------------------------------------------
+
 ! fonts
-URxvt*font: xft:Monaco for Powerline:regular:size=8
-URxvt*imFont: xft:Monaco for Powerline:regular:size=8
-URxvt*boldFont: xft:Monaco for Powerline:regular:size=8
-URxvt*italicFont: xft:Monaco for Powerline:italic:size=8
-URxvt*boldItalicFont: xft:Monaco for Powerline:bold:italic:size=8
+!URxvt*font: xft:Monaco for Powerline:regular:size=8
+!URxvt*imFont: xft:Monaco for Powerline:regular:size=8
+!URxvt*boldFont: xft:Monaco for Powerline:regular:size=8
+!URxvt*italicFont: xft:Monaco for Powerline:italic:size=8
+!URxvt*boldItalicFont: xft:Monaco for Powerline:bold:italic:size=8
+
+!URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=7:antialias=true:autohinting=true
+!URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=10:antialias=true:autohinting=true
+URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=9
+URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=9
+URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=9
+URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:bolditalic:pixelsize=9
+!URxvt*imFont: xft:DejaVu Sans Mono for Powerline:regular:pixelsize=8:antialias=true:autohinting=true
+!URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=8:antialias=true:autohinting=true
+!URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=10:antialias=true:autohinting=true
+!URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:bolditalic:pixelsize=8:antialias=true:autohinting=true
