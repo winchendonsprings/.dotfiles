@@ -15,6 +15,7 @@ ZSH_THEME="simple"
 export TERM=screen-256color
 #alias cl='clear'
 alias p='pwd'
+alias art='cat /home/ry/.art'
 alias clock='tty-clock -s'
 alias ack='ack-grep'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
@@ -76,3 +77,5 @@ DEFAULT_USER='ry'
 
 # this will display the pwd in TMUX
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
+#cat .art
