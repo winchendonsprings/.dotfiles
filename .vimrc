@@ -146,17 +146,18 @@ Bundle 'airblade/vim-gitgutter'
 
 "" themes
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'chriskempson/base16-vim'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'qqshfox/inkpot'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'w0ng/vim-hybrid'
 Bundle 'twerth/ir_black'
 Bundle 'molokai'
-Bundle 'wombat256.vim'
-Bundle 'xoria256.vim'
-Bundle 'peaksea'
-Bundle 'fruity.vim'
+"Bundle 'w0ng/vim-hybrid'
+"Bundle 'wombat256.vim'
+"Bundle 'xoria256.vim'
+"Bundle 'peaksea'
+"Bundle 'fruity.vim'
 
 set laststatus=2 
 
@@ -172,17 +173,17 @@ set t_Co=256
 " colorscheme jellybeans
 " colorscheme molokai
 
-	"""" solarized START 
-	"syntax enable
-	"if has('gui_running')
-	"set background=light
-	"else
-	"set background=dark
-	"endif
-	""set t_Co=16
-	"let g:solarized_termcolors=16
-	"colorscheme solarized
-	"""" solarized END
+"""" solarized START 
+"colorscheme solarized
+"syntax enable
+ "if has('gui_running')
+ "set background=light
+ "else
+ "set background=dark
+ "endif
+""set t_Co=16
+""let g:solarized_termcolors=16
+"""" solarized END
 
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
