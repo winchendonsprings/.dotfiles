@@ -18,7 +18,7 @@ alias p='pwd'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -s'
 alias ack='ack-grep'
-alias upgrade='vundle-update && sudo git extras update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
+alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 #alias update='sudo aptitude update && sudo aptitude full-upgrade'
 #alias upgrade='sudo aptitude full-upgrade'
 alias offlineimap bl='offlineimap -u blinkenlights'
@@ -68,7 +68,7 @@ alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras autojump command-not-found debian extract tmux vundle)
+plugins=(git git-extras autojump command-not-found debian extract vundle)
 
 source $ZSH/oh-my-zsh.sh
 
