@@ -1,5 +1,5 @@
 ! XTerm settings
-XTerm*background:   #030303
+XTerm*background:   #333333
 XTerm*foreground:   #E6E6E6
 XTerm*cursorColor:  #B1DD7F
 XTerm*faceSize:     10
