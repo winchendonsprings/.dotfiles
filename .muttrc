@@ -105,3 +105,25 @@ macro index gl "<change-folder>=LCA<enter>" "Go to google left-click folder"
 #source /home/ry/.mutt/ir_green.theme
 source /home/ry/.mutt/ir_green-mod.theme
 #==============================#
+#SIDEBAR start
+# set up the sidebar, default not visible
+set sidebar_width=25
+set sidebar_visible=no
+set sidebar_delim='|'
+set sidebar_sort=yes
+# b toggles sidebar visibility
+macro index b "<enter-command>toggle sidebar_visible<enter>"
+macro pager b "<enter-command>toggle sidebar_visible<enter>"
+# which mailboxes to list in the sidebar
+mailboxes =INBOX =GV =LCA
+# color of folders with new mail
+color sidebar_new yellow default
+# ctrl-n, ctrl-p to select next, prev folder
+# ctrl-o to open selected folder
+bind index \cp sidebar-prev
+bind index \cn sidebar-next
+bind index \co sidebar-open
+bind pager \cp sidebar-prev
+bind pager \cn sidebar-next
+bind pager \co sidebar-open
+#SIDEBAR stop
