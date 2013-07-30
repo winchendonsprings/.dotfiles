@@ -1,24 +1,27 @@
 [general]
 accounts = winchendonsprings
-maxsyncaccounts = 1
+maxsyncaccounts = 3
 socktimeout = 60
-ui = ttyui
+ui = quiet
+#ui = ttyui
 #ui = blinkenlights
 
 [Account winchendonsprings]
 localrepository = local-winchendonsprings
 remoterepository = remote-winchendonsprings
-autorefresh = 10
+#####Minutes between syncs
+autorefresh = 5
+######Number of quick-syncs between autorefreshes. Quick-syncs do not update if the only changes were to IMAP flags
+#quick = 10
 maxage = 30
 #maxsize = 100000
-#quick = 4
 
 [Repository local-winchendonsprings]
 type = Maildir
 localfolders = /home/ry/.mail
 
 [Repository remote-winchendonsprings]
-maxconnections = 1
+maxconnections = 3
 type = Gmail
 remotehost = imap.gmail.com
 remoteuser = winchendonsprings@gmail.com
