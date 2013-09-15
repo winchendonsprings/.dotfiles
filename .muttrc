@@ -89,7 +89,7 @@ macro index gs "<change-folder>=[Gmail].Sent Mail<enter>" "Go to sent mail"
 macro index gd "<change-folder>=[Gmail].Drafts<enter>" "Go to drafts"
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index gv "<change-folder>=GV<enter>" "Go to google voice folder"
-macro index gl "<change-folder>=LCA<enter>" "Go to google left-click folder"
+macro index gl "<change-folder>=LCM<enter>" "Go to google left-click folder"
 #==============================#
 # colors below
 #source /home/ry/.mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
@@ -115,7 +115,7 @@ set sidebar_sort=yes
 macro index b "<enter-command>toggle sidebar_visible<enter>"
 macro pager b "<enter-command>toggle sidebar_visible<enter>"
 # which mailboxes to list in the sidebar
-mailboxes =INBOX =GV =LCA
+mailboxes =INBOX =GV =LCA =LCM
 # color of folders with new mail
 color sidebar_new yellow default
 # ctrl-n, ctrl-p to select next, prev folder
