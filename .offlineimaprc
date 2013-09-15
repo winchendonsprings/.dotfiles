@@ -46,7 +46,8 @@ realdelete = no
 # idlefolders = ['INBOX', 'INBOX.Alerts']
 #
 #ryan
-idlefolders = ['INBOX', 'LCA', 'GV']
+#idlefolders = ['INBOX', 'LCA', 'LCM', 'GV']
+idlefolders = ['INBOX', 'LCM', 'GV']
 
 # You can specify which folders to sync using the folderfilter
 # setting. You can provide any python function (e.g. a lambda function)
@@ -79,4 +80,5 @@ idlefolders = ['INBOX', 'LCA', 'GV']
 #         'Received']
 #
 #ryan
-folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCA', 'GV']
+#folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCA', 'LCM', 'GV']
+folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCM', 'GV']
