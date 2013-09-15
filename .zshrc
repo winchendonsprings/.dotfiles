@@ -16,7 +16,7 @@ export TERM=screen-256color
 #alias cl='clear'
 alias p='pwd'
 alias art='cat /home/ry/.art'
-alias clock='tty-clock -s'
+alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
 alias ack='ack-grep'
 alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 #alias update='sudo aptitude update && sudo aptitude full-upgrade'
@@ -44,6 +44,7 @@ alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 #alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
+alias mail='sh /home/ry/Documents/mailsync.sh'
 #pretty git logs
 #alias gitl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias gil="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
