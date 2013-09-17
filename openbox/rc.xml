@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Ryan</name>
+    <name>ryan-openbox</name>
     <titleLayout>L</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -338,7 +338,6 @@
         <command>gnome-screenshot</command>
       </action>
     </keybind>
-
     <!--ryan-->
     <keybind key="A-F2">
       <action name="Execute">
@@ -346,41 +345,37 @@
         <execute>dmenu_run -p '&gt;&gt;&gt;&gt;&gt;' -i -fn '-*-terminal-*-*-*-*-*-*-*-*-*-*-*-*' -nb '#fefefe' -nf '#010101' -sb '#FF0000' -sf '#FFFFFF' </execute>
       </action>
     </keybind>
-
     <keybind key="A-S-d">
       <action name="ToggleDecorations"/>
     </keybind>
-
     <!--<keybind key="A-F6">-->
-      <!--<action name="Maximize"/>-->
+    <!--<action name="Maximize"/>-->
     <!--</keybind>-->
     <!--<keybind key="A-F7">-->
-      <!--<action name="Unmaximize"/>-->
+    <!--<action name="Unmaximize"/>-->
     <!--</keybind>-->
-
     <!--<keybind key="XF86AudioRaiseVolume">-->
-      <!--<action name="Execute">-->
-        <!--<command>amixer set Master 5%+ unmute</command>-->
-        <!--[><command>amixer set Speaker 5%+ unmute</command><]-->
-        <!--[><command>amixer set Headphone 5%+ unmute</command><]-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>amixer set Master 5%+ unmute</command>-->
+    <!--[><command>amixer set Speaker 5%+ unmute</command><]-->
+    <!--[><command>amixer set Headphone 5%+ unmute</command><]-->
+    <!--</action>-->
     <!--</keybind>-->
     <!--<keybind key="XF86AudioLowerVolume">-->
-      <!--<action name="Execute">-->
-        <!--<command>amixer set Master 5%- unmute</command>-->
-        <!--[><command>amixer set Speaker 5%- unmute</command><]-->
-        <!--[><command>amixer set Headphone 5%- unmute</command><]-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>amixer set Master 5%- unmute</command>-->
+    <!--[><command>amixer set Speaker 5%- unmute</command><]-->
+    <!--[><command>amixer set Headphone 5%- unmute</command><]-->
+    <!--</action>-->
     <!--</keybind>-->
     <!--<keybind key="XF86AudioMute">-->
-      <!--<action name="Execute">-->
-        <!--<command>amixer set Master toggle</command>-->
-        <!--[><command>amixer set Speaker toggle</command><]-->
-        <!--[><command>amixer set Headphone toggle</command><]-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>amixer set Master toggle</command>-->
+    <!--[><command>amixer set Speaker toggle</command><]-->
+    <!--[><command>amixer set Headphone toggle</command><]-->
+    <!--</action>-->
     <!--</keybind>-->
     <!-- end ryan -->
-
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
