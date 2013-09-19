@@ -148,10 +148,17 @@ Xft.hintstyle: hintslight
 
 !URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=7:antialias=true:autohinting=true
 !URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=10:antialias=true:autohinting=true
-URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=9
-URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=9
-URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=9
-URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:bolditalic:pixelsize=9
+
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=9
+URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=9
+URxvt*italicFont: xft:DejaVu Sans Mono:italic:pixelsize=9
+URxvt*boldItalicFont: xft:DejaVu Sans Mono:bolditalic:pixelsize=9
+
+!URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=9
+!URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=9
+!URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=9
+!URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:bolditalic:pixelsize=9
+
 !URxvt*imFont: xft:DejaVu Sans Mono for Powerline:regular:pixelsize=8:antialias=true:autohinting=true
 !URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:bold:pixelsize=8:antialias=true:autohinting=true
 !URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=10:antialias=true:autohinting=true
