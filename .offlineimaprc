@@ -45,7 +45,6 @@ realdelete = no
 #
 # idlefolders = ['INBOX', 'INBOX.Alerts']
 #
-#ryan
 #idlefolders = ['INBOX', 'LCA', 'LCM', 'GV']
 idlefolders = ['INBOX', 'LCM', 'GV']
 
@@ -79,6 +78,5 @@ idlefolders = ['INBOX', 'LCM', 'GV']
 #        ['INBOX', 'Sent Mail', 'Deleted Items',
 #         'Received']
 #
-#ryan
 #folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCA', 'LCM', 'GV']
 folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCM', 'GV']
