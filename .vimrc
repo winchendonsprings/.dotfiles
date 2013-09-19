@@ -44,34 +44,34 @@ endif
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
-" Enable file type detection.
-" Use the default filetype settings, so that mail gets 'tw' set to 72,
-" 'cindent' is on in C files, etc.
-" Also load indent files, to automatically do language-dependent indenting.
-filetype plugin indent on
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
 
-" Put these in an autocmd group, so that we can delete them easily.
-augroup vimrcEx
-au!
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+	au!
 
-" For all text files set 'textwidth' to 78 characters.
-autocmd FileType text setlocal textwidth=78
+	" For all text files set 'textwidth' to 78 characters.
+	autocmd FileType text setlocal textwidth=78
 
-" When editing a file, always jump to the last known cursor position.
-" Don't do it when the position is invalid or when inside an event handler
-" (happens when dropping a file on gvim).
-" Also don't do it when the mark is in the first line, that is the default
-" position when opening a file.
-autocmd BufReadPost *
-  \ if line("'\"") > 1 && line("'\"") <= line("$") |
-  \   exe "normal! g`\"" |
-  \ endif
+	" When editing a file, always jump to the last known cursor position.
+	" Don't do it when the position is invalid or when inside an event handler
+	" (happens when dropping a file on gvim).
+	" Also don't do it when the mark is in the first line, that is the default
+	" position when opening a file.
+	autocmd BufReadPost *
+		  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+		  \   exe "normal! g`\"" |
+		  \ endif
 
-augroup END
+  augroup END
 
 else
 
-set autoindent		" always set autoindenting on
+  set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
 
@@ -80,14 +80,13 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+		\ | wincmd p | diffthis
 endif
 
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 
-"F
 """"""""""""""""""" For Vundle --- There may be duplicates
 
 set nocompatible               " be iMproved
@@ -97,14 +96,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
- Bundle 'gmarik/vundle'
+" required!
+Bundle 'gmarik/vundle'
 
 " original repos on github
 " vim-scripts repos
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
- 
+
 filetype plugin indent on     " required!
 
 " Brief help
@@ -116,9 +115,9 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 "
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END 
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END 
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END 
+" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END
+" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END
+" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END
 
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
 " ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
@@ -129,8 +128,9 @@ filetype plugin indent on     " required!
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'bling/vim-airline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'AutoComplPop'
 Bundle 'tpope/vim-fugitive'
@@ -159,7 +159,7 @@ Bundle 'molokai'
 "Bundle 'peaksea'
 "Bundle 'fruity.vim'
 
-set laststatus=2 
+set laststatus=2
 
 " add colors
 set t_Co=256
@@ -167,20 +167,20 @@ set t_Co=256
 " colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
- colorscheme Tomorrow-Night-Bright 
+colorscheme Tomorrow-Night-Bright
 " colorscheme Tomorrow-Night
-" colorscheme zenburn 
+" colorscheme zenburn
 " colorscheme jellybeans
 " colorscheme molokai
 
-"""" solarized START 
+"""" solarized START
 "colorscheme solarized
 "syntax enable
- "if has('gui_running')
- "set background=light
- "else
- "set background=dark
- "endif
+"if has('gui_running')
+"set background=light
+"else
+"set background=dark
+"endif
 ""set t_Co=16
 ""let g:solarized_termcolors=16
 """" solarized END
@@ -190,6 +190,13 @@ set directory=~/.tmp " Don't clutter dirs with tmp & swp
 
 " powerline
 let g:Powerline_symbols = 'fancy'
+
+" airline
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_powerline_fonts=0
+"let g:airline_theme=
+
 
 " allows :w!! to save if you forgot to open a readonly without perms
 cmap w!! %!sudo tee > /dev/null %
@@ -245,7 +252,10 @@ set autochdir
 " change tab size from 8 spaces to 4
 set tabstop=4
 
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END 
+" change shift size to 2
+set shiftwidth=2
+
+" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
+" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
+" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
+" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
