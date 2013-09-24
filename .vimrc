@@ -167,11 +167,11 @@ set t_Co=256
 " colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
-colorscheme Tomorrow-Night-Bright
-" colorscheme Tomorrow-Night
 " colorscheme zenburn
 " colorscheme jellybeans
 " colorscheme molokai
+" colorscheme Tomorrow-Night-Bright		"laptop
+colorscheme Tomorrow-Night				"devbox
 
 """" solarized START
 "colorscheme solarized
