@@ -138,6 +138,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-haml'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'airblade/vim-gitgutter'
+"Bundle 'mhinz/vim-signify'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'Shougo/neocomplcache'
@@ -167,11 +168,12 @@ set t_Co=256
 " colorscheme hybrid
 " colorscheme inkpot
 " colorscheme vividchalk
-colorscheme Tomorrow-Night-Bright
-" colorscheme Tomorrow-Night
 " colorscheme zenburn
 " colorscheme jellybeans
 " colorscheme molokai
+" colorscheme Tomorrow-Night-Bright		"laptop
+colorscheme Tomorrow-Night				"devbox
+colorscheme Tomorrow-Night				"desktop
 
 """" solarized START
 "colorscheme solarized
@@ -195,7 +197,8 @@ let g:Powerline_symbols = 'fancy'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_powerline_fonts=0
-"let g:airline_theme=
+let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='powerlineish'
 
 
 " allows :w!! to save if you forgot to open a readonly without perms

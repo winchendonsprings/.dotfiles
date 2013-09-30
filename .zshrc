@@ -6,7 +6,9 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="simple"
+#ZSH_THEME="simple" #laptop
+#ZSH_THEME="ryandev" #devbox
+ZSH_THEME="ryan-desktop" #desktop
 
 # Example aliases
 #alias zshconfig="mate ~/.zshrc"
@@ -22,7 +24,7 @@ alias ack='ack-grep'
 alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 #alias update='sudo aptitude update && sudo aptitude full-upgrade'
 #alias upgrade='sudo aptitude full-upgrade'
-alias offlineimap bl='offlineimap -u blinkenlights'
+alias offlineimap-bl='offlineimap -u blinkenlights'
 #alias offlineimap ='offlineimap -u ttyui'
 alias weather='sh ~/Documents/weatherpdx.sh'
 alias sudo aptitude='nocorrect sudo aptitude'

@@ -4,3 +4,5 @@ sh /home/ry/.fehbg &
 parcellite -n -d &
 gnome-settings-daemon &
 eval $(gnome-keyring-daemon --start) &
+ssh-agent &
+#xrandr --auto --output DVI-I-2 --right-of DVI-I-1 & #desktop
