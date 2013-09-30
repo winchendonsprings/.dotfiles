@@ -102,6 +102,7 @@ macro index gl "<change-folder>=LCM<enter>" "Go to google left-click folder"
 #source /home/ry/.mutt/colors.ryan
 #source /home/ry/.mutt/ir_pink.theme
 #source /home/ry/.mutt/ir_blue.theme
+#source /home/ry/.mutt/ir_blue-mod.theme
 #source /home/ry/.mutt/ir_green.theme
 source /home/ry/.mutt/ir_green-mod.theme
 #==============================#
