@@ -6,9 +6,13 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-#ZSH_THEME="simple" #laptop
-#ZSH_THEME="ryandev" #devbox
-ZSH_THEME="ryan-desktop" #desktop
+if [[ "$HOST" == "g62x" ]]; then	 
+  ZSH_THEME="simple"						#laptop
+elif [[ "$HOST" == "devbox" ]]; then
+  ZSH_THEME="ryandev"						#devbox
+elif [[ "$HOST" == "desktop" ]]; then
+  ZSH_THEME="ryan-desktop"				#desktop
+fi
 
 # Example aliases
 #alias zshconfig="mate ~/.zshrc"
