@@ -171,9 +171,14 @@ set t_Co=256
 " colorscheme zenburn
 " colorscheme jellybeans
 " colorscheme molokai
-" colorscheme Tomorrow-Night-Bright		"laptop
-colorscheme Tomorrow-Night				"devbox
-colorscheme Tomorrow-Night				"desktop
+
+if hostname() == "g62x"
+  colorscheme Tomorrow-Night-Bright			"laptop
+elseif hostname() == "devbox"
+  colorscheme Tomorrow-Night				"devbox
+elseif hostname() == "desktop"
+  colorscheme inkpot						"desktop
+endif
 
 """" solarized START
 "colorscheme solarized
@@ -197,7 +202,7 @@ let g:Powerline_symbols = 'fancy'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_powerline_fonts=0
-let g:airline#extensions#tabline#enabled=1
+"let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='powerlineish'
 
 
