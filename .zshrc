@@ -11,7 +11,7 @@ if [[ "$HOST" == "g62x" ]]; then
 elif [[ "$HOST" == "devbox" ]]; then
   ZSH_THEME="ryandev"						#devbox
 elif [[ "$HOST" == "desktop" ]]; then
-  ZSH_THEME="ryan-desktop"				#desktop
+  ZSH_THEME="ryan-desktop"					#desktop
 fi
 
 # Example aliases
