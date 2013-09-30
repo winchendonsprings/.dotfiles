@@ -137,8 +137,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-haml'
 Bundle 'myusuf3/numbers.vim'
-Bundle 'airblade/vim-gitgutter'
-"Bundle 'mhinz/vim-signify'
+"Bundle 'airblade/vim-gitgutter'
+Bundle 'mhinz/vim-signify'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'Shougo/neocomplcache'
@@ -196,7 +196,7 @@ set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter dirs with tmp & swp
 
 " powerline
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 " airline
 let g:airline_left_sep=''
