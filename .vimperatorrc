@@ -1,17 +1,17 @@
 set defsearch=d
+set complete=slbh
+
 set gui=none
+set scrollbars=off
+
 set hintchars=qwertyuiopasdfghjkl
-"colorscheme ryan
-"set editor=vim -f
-"scrollbars=off
-""removes popup at bottom
-"set autocomplete=false
-set complete=s
 
+set editor=vim -f
 
-""" Colorscheme " see :help highlight for elements to color etc;
-highlight Hint padding:0 2px; font:10px bold sans; color:#fff; background-color:#0000ff;
+""""" Colorscheme, see :help highlight for elements to style etc;
+highlight Hint padding:0 2px; font:12px bold sans; color:#fff; background-color:#0000ff;
 highlight HintElem background-color:rgba(200,125,0,0.2);
-highlight Normal background-color:#000; color:#fff;
-highlight CmdLine background-color:#000; color:#fff;
-highlight StatusLine background-color:#000; color:#fff;
+highlight Normal background-color:#222; color:#ddd;
+highlight CmdLine background-color:#222; color:#ddd;
+"highlight StatusLine background-color:#222; color:#ddd;
+highlight CompTitle>* background-color:#222; color:#ddd;
