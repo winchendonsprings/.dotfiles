@@ -10,7 +10,7 @@ if [[ "$HOST" == "g62x" ]]; then
   ZSH_THEME="simple"						#laptop
 elif [[ "$HOST" == "devbox" ]]; then
   ZSH_THEME="ryandev"						#devbox
-elif [[ "$HOST" == "desktop" ]]; then
+elif [[ "$HOST" == "debian" ]]; then
   ZSH_THEME="ryan-desktop"					#desktop
 fi
 

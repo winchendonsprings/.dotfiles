@@ -176,7 +176,7 @@ if hostname() == "g62x"
   colorscheme Tomorrow-Night-Bright			"laptop
 elseif hostname() == "devbox"
   colorscheme Tomorrow-Night				"devbox
-elseif hostname() == "desktop"
+elseif hostname() == "debian"
   colorscheme inkpot						"desktop
 endif
 
