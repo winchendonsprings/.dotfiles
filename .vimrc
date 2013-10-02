@@ -177,7 +177,7 @@ if hostname() == "g62x"
 elseif hostname() == "devbox"
   colorscheme Tomorrow-Night				"devbox
 elseif hostname() == "debian"
-  colorscheme inkpot						"desktop
+  colorscheme base16-default				"desktop
 endif
 
 """" solarized START
@@ -203,7 +203,7 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_powerline_fonts=0
 "let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='powerlineish'
+"let g:airline_theme='powerlineish'
 
 
 " allows :w!! to save if you forgot to open a readonly without perms
