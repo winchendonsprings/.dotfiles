@@ -1,8 +1,9 @@
-! XTerm settings
+! XTerm settings --------------------------
 !XTerm*faceSize:     10
 !Xterm*faceName:	   Ubuntu\ Mono:pixelsize=10 
+!------------------------------------------
 
-! URXVT - Settings
+! URXVT - Settings ------------------------
 !load scripts
 !URxvt.perl-lib: /home/ry/.urxvt/urxvt-perls/
 !URxvt*termName: rxvt-256color
@@ -10,8 +11,9 @@ URxvt*saveline: 15000
 URxvt*termName: urxvt
 URxvt*iso14755: false
 URxvt*iconFile: /usr/share/icons/Faience/apps/scalable/utilities-terminal.svg
+!------------------------------------------
 
-!keyboard select
+!keyboard select --------------------------
 !is the ... needed?
 !URxvt.perl-ext-common: ...,clipboard,default,keyboard-select,matcher,url-select
 !URxvt.perl-ext-common: default,clipboard,keyboard-select,matcher,url-select
@@ -32,8 +34,9 @@ URxvt*iconFile: /usr/share/icons/Faience/apps/scalable/utilities-terminal.svg
 !URxvt.url-select.underline: true
 !Next three lines make ocopy and paste with keyboard doable
 !URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+!------------------------------------------
 
-! appearance
+! appearance ------------------------------
 URxvt.geometry: 92x56
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
@@ -47,8 +50,9 @@ URxvt*borderLess: false
 !URxvt.highlightColor: Orange
 !URxvt.throughColor: Blue
 !URxvt*cursorColor2: Black
+!------------------------------------------
 
-! colors
+! colors ----------------------------------
 !URxvt*color0: #2e3436
 !URxvt*color1: #cc0000
 !URxvt*color2: #4e9a06
@@ -177,6 +181,7 @@ URxvt*color12: #b0b0b0
 URxvt*color13: #e0e0e0
 URxvt*color14: #8f5536
 URxvt*color15: #f5f5f5
+!------------------------------------------
 
 
 ! Xft settings ----------------------------
@@ -187,7 +192,7 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 !------------------------------------------
 
-! fonts
+! fonts -----------------------------------
 URxvt*font: xft:DejaVu Sans Mono:pixelsize=9
 URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=9
 URxvt*italicFont: xft:DejaVu Sans Mono:italic:pixelsize=9
@@ -197,3 +202,4 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:bolditalic:pixelsize=9
 !URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=9
 !URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:italic:pixelsize=9
 !URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:bolditalic:pixelsize=9
+!------------------------------------------
