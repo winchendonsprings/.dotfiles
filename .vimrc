@@ -178,6 +178,7 @@ elseif hostname() == "devbox"
   colorscheme Tomorrow-Night				"devbox
 elseif hostname() == "debian"
   colorscheme base16-default				"desktop
+  set background=dark
 endif
 
 """" solarized START
