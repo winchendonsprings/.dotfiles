@@ -9,8 +9,8 @@ set hintchars=qwertyuiopasdfghjkl
 set editor=vim -f
 
 """"" Colorscheme, see :help highlight for elements to style etc;
-highlight Hint padding:0 2px; font:12px bold "Deja Vu Sans"; color:#fff; background-color:#0000ff; border:1px solid #fff;
-highlight HintElem background-color:rgba(200,125,0,0.2);
+highlight Hint padding:0 2px 0 2px; font-size:12px; font-weight:bold; color:#fff; background-color:#0000ff; border:1px solid #fff;
+highlight HintElem background-color:#fff000;
 highlight Normal background-color:#222; color:#ddd;
 highlight CmdLine background-color:#222; color:#ddd;
 "highlight StatusLine background-color:#222; color:#ddd;
