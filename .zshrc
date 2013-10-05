@@ -18,7 +18,8 @@ fi
 #alias zshconfig="mate ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
 ######alias tmux='tmux -2' #for 256 color
-export TERM=screen-256color
+     export TERM=screen-256color
+ #    export TERM=screen-16color
 #alias cl='clear'
 alias p='pwd'
 alias art='cat /home/ry/.art'
@@ -82,3 +83,6 @@ DEFAULT_USER='ry'
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 #cat .art
+#
+# base 16 shell
+source /home/ry/.dotfiles/base16-default.dark-shell.sh
