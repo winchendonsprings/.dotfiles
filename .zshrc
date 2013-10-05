@@ -24,12 +24,9 @@ alias p='pwd'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
 alias ack='ack-grep'
-#alias colors='colortest.sh -w'
+#alias colors='./.dotfiles/colortest.sh -w'
 alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
-#alias update='sudo aptitude update && sudo aptitude full-upgrade'
-#alias upgrade='sudo aptitude full-upgrade'
 alias offlineimap-bl='offlineimap -u blinkenlights'
-#alias offlineimap ='offlineimap -u ttyui'
 alias weather='sh ~/Documents/weatherpdx.sh'
 alias sudo aptitude='nocorrect sudo aptitude'
 alias aptitude='nocorrect aptitude'
@@ -40,10 +37,8 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 alias k9='kill -9'
-#show frequntly used commands
-alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30'
-#show only folders
-alias l='ls -lah'
+alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30' #show frequntly used commands
+alias l='ls -lah' #show only folders
 alias lf='ls -Gl | grep ^d' #Only list directories
 alias lsd='ls -Gal | grep ^d' #Only list directories, including hidden ones
 #alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''  #recursively list all of the files in a directory - tree does this better
