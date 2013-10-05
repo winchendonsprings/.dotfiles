@@ -162,25 +162,25 @@ URxvt*borderLess: false
 !URxvt*color14: #8f5536 !base0F
 !URxvt*color15: #f5f5f5 !base07
 
-URxvt*foreground: #d0d0d0
-URxvt*background: #151515
-URxvt*cursorColor: #d0d0d0
-URxvt*color0: #151515
-URxvt*color1: #ac4142
-URxvt*color2: #90a959
-URxvt*color3: #f4bf75
-URxvt*color4: #6a9fb5
-URxvt*color5: #aa759f
-URxvt*color6: #75b5aa
-URxvt*color7: #d0d0d0
-URxvt*color8: #505050
-URxvt*color9: #d28445
-URxvt*color10: #202020
-URxvt*color11: #303030
-URxvt*color12: #b0b0b0
-URxvt*color13: #e0e0e0
-URxvt*color14: #8f5536
-URxvt*color15: #f5f5f5
+!URxvt*foreground: #d0d0d0
+!URxvt*background: #151515
+!URxvt*cursorColor: #d0d0d0
+!URxvt*color0: #151515
+!URxvt*color1: #ac4142
+!URxvt*color2: #90a959
+!URxvt*color3: #f4bf75
+!URxvt*color4: #6a9fb5
+!URxvt*color5: #aa759f
+!URxvt*color6: #75b5aa
+!URxvt*color7: #d0d0d0
+!URxvt*color8: #505050
+!URxvt*color9: #d28445
+!URxvt*color10: #202020
+!URxvt*color11: #303030
+!URxvt*color12: #b0b0b0
+!URxvt*color13: #e0e0e0
+!URxvt*color14: #8f5536
+!URxvt*color15: #f5f5f5
 !------------------------------------------
 
 
