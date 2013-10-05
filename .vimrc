@@ -172,12 +172,16 @@ set t_Co=256
 " colorscheme jellybeans
 " colorscheme molokai
 
+let base16colorspace=256  " Access colors present in 256 colorspace
+
 if hostname() == "g62x"
-  colorscheme Tomorrow-Night-Bright			"laptop
+  colorscheme base16-default
+  set background=dark
 elseif hostname() == "devbox"
-  colorscheme Tomorrow-Night				"devbox
+  colorscheme Tomorrow-Night
+  set background=dark
 elseif hostname() == "debian"
-  colorscheme base16-default				"desktop
+  colorscheme Tomorrow-Night-Bright
   set background=dark
 endif
 
