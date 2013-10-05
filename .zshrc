@@ -7,11 +7,11 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 if [[ "$HOST" == "g62x" ]]; then	 
-  ZSH_THEME="simple"						#laptop
+  ZSH_THEME="../../.dotfiles/simple-lap"						#laptop
 elif [[ "$HOST" == "devbox" ]]; then
-  ZSH_THEME="ryandev"						#devbox
+  ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
 elif [[ "$HOST" == "debian" ]]; then
-  ZSH_THEME="ryan-desktop"					#desktop
+  ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
 fi
 
 # Example aliases

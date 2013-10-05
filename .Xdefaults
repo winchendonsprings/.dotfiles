@@ -183,7 +183,6 @@ URxvt*borderLess: false
 !URxvt*color15: #f5f5f5
 !------------------------------------------
 
-
 ! Xft settings ----------------------------
 Xft.dpi: 96
 Xft.antialias: true
