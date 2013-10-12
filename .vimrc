@@ -1,10 +1,5 @@
-" Ryan  Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan
-" Ryan  Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan
-" Ryan  Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan
-" Ryan  Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan
-" Ryan  Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan
-" Ryan  Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan Ryan
-
+" Ryan
+"
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -17,10 +12,11 @@ if has("vms")
 else
   set backup		" keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+
+set history=5			" keep 50 lines of command line history0
+set ruler				" show the cursor position all the time
+set showcmd				" display incomplete commands
+set incsearch			" do incremental searching
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -84,8 +80,6 @@ if !exists(":DiffOrig")
 endif
 
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle START
 
 """"""""""""""""""" For Vundle --- There may be duplicates
 
@@ -116,13 +110,6 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 "
 " Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END
-" Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle Vundle END
-
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan  START
 
 "" plugins
 Bundle 'scrooloose/nerdtree'
@@ -172,14 +159,16 @@ set t_Co=256
 " colorscheme jellybeans
 " colorscheme molokai
 
-let base16colorspace=256  " Access colors present in 256 colorspace
+" Access colors present in 256 colorspace
+let base16colorspace=256
 
+" set colorscheme based on what computer I'm on
 if hostname() == "g62x"
   colorscheme base16-default
   set background=dark
 elseif hostname() == "devbox"
-  colorscheme Tomorrow-Night
-  set background=dark
+  colorscheme jellybeans
+  "set background=dark
 elseif hostname() == "debian"
   colorscheme Tomorrow-Night-Bright
   set background=dark
@@ -197,13 +186,14 @@ endif
 ""let g:solarized_termcolors=16
 """" solarized END
 
+" Don't clutter dirs with tmp & swp
 set backupdir=~/.tmp
-set directory=~/.tmp " Don't clutter dirs with tmp & swp
+set directory=~/.tmp
 
 " powerline
-"let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols='fancy'
 
-" airline
+" airline settings
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_powerline_fonts=0
@@ -221,13 +211,13 @@ let g:ctrlp_cmd = 'CtrlPBuffer' " opens ctrlp in buffer mode rather than filesmo
 " no welcome message
 set shortmess+=I
 
-"" start neocomplcache on start
+" start neocomplcache on start
 "let g:neocomplcache_enable_at_startup = 1
-"
-"" show line numbers
-"set number
-"
-" NERTree shortcut
+
+" show line numbers
+set number
+
+" NERDTree shortcut
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>ntc :NERDTreeClose<cr>
 
@@ -252,7 +242,7 @@ let NERDTreeShowHidden=1
 "nnoremap <C-L> <C-W><C-L>
 "nnoremap <C-H> <C-W><C-H>
 
-" More natural split opening open new split panes to right and bottom, which feels more natural than Vim’s default:
+" More natural split opening open new split panes to right and bottom, which feels more natural than Vim’s default
 set splitbelow
 set splitright
 
@@ -268,7 +258,8 @@ set tabstop=4
 " change shift size to 2
 set shiftwidth=2
 
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
-" ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan ryan END
+" highlight current line
+set cursorline
+
+" Set to auto read when a file is changed from the outside
+set autoread
