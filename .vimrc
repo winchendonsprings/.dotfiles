@@ -142,7 +142,7 @@ Bundle 'qqshfox/inkpot'
 Bundle 'twerth/ir_black'
 Bundle 'molokai'
 "Bundle 'w0ng/vim-hybrid'
-"Bundle 'wombat256.vim'
+Bundle 'wombat256.vim'
 "Bundle 'xoria256.vim'
 "Bundle 'peaksea'
 "Bundle 'fruity.vim'
@@ -168,10 +168,8 @@ if hostname() == "g62x"
   set background=dark
 elseif hostname() == "devbox"
   colorscheme jellybeans
-  "set background=dark
 elseif hostname() == "debian"
-  colorscheme Tomorrow-Night-Bright
-  set background=dark
+  colorscheme molokai
 endif
 
 """" solarized START
