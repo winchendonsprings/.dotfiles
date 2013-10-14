@@ -30,6 +30,10 @@
   <item label="Exit">
     <action name="Exit" />
   </item>
+  <separator />
+  <item label="Suspend">
+	<action name="Execute"><execute>sudo /usr/sbin/pm-suspend</execute></action>
+  </item>
 </menu>
 
 </openbox_menu>
