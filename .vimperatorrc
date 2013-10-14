@@ -1,8 +1,8 @@
-set defsearch=d
+set defsearch=duckduckgo
 set complete=slbh
 
 set gui=none
-set scrollbars=off
+set noscrollbars
 
 set hintchars=qwertyuiopasdfghjkl
 
