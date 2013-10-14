@@ -17,9 +17,6 @@ fi
 # Example aliases
 #alias zshconfig="mate ~/.zshrc"
 #alias ohmyzsh="mate ~/.oh-my-zsh"
-######alias tmux='tmux -2' #for 256 color
-     export TERM=screen-256color
- #    export TERM=screen-16color
 #alias cl='clear'
 alias p='pwd'
 alias art='cat /home/ry/.art'
@@ -53,6 +50,10 @@ alias mail='sh /home/ry/Documents/mailsync.sh'
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git gg="git log --graph --full-history --all --color --pretty=format:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s'"
 
+#alias tmux='tmux -2' 	#for 256 color
+export TERM=screen-256color
+#export TERM=screen-16color 	#for 16 color
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -72,7 +73,7 @@ alias mail='sh /home/ry/Documents/mailsync.sh'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras autojump command-not-found debian extract vundle)
+plugins=(git git-extras gitfast autojump colored-man command-not-found debian extract rsync vi-mode vundle)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,7 +83,17 @@ DEFAULT_USER='ry'
 # this will display the pwd in TMUX
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
+# display art in new shell
 #cat .art
-#
+
 # base 16 shell
 source /home/ry/.dotfiles/base16-default.dark-shell.sh
+
+# add git completion
+#source /home/ry/.dotfiles/git-completion.sh
+
+# set default editor
+export EDITOR='vim'
+
+# set zsh mode to vi
+set -o vi
