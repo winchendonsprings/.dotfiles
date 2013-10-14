@@ -89,9 +89,6 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -
 # base 16 shell
 source /home/ry/.dotfiles/base16-default.dark-shell.sh
 
-# add git completion
-#source /home/ry/.dotfiles/git-completion.sh
-
 # set default editor
 export EDITOR='vim'
 
