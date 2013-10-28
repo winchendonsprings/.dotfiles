@@ -1,9 +1,12 @@
 #feh --bg-tile ~/Pictures/white.png &
 #tint2 &
-sh /home/ry/.fehbg &
+#sh /home/ry/.fehbg &
 parcellite -n -d &
 gnome-settings-daemon &
 eval $(gnome-keyring-daemon --start) &
 #ssh-agent &
+#sleep 5s && ssh-add &
 #xrandr --auto --output DVI-I-2 --right-of DVI-I-1 & 	#desktop
-xrdb -merge /home/ry/.Xresources
+xrdb -merge /home/ry/.Xresources &
+bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee/ &
+offlineimap &
