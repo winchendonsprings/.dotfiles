@@ -22,6 +22,7 @@ alias p='pwd'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
 alias ack='ack-grep'
+alias bitlbee-on='bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee'
 #alias colors='./.dotfiles/colortest.sh -w'
 alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias offlineimap-bl='offlineimap -u blinkenlights'
@@ -91,6 +92,9 @@ source /home/ry/.dotfiles/base16-default.dark-shell.sh
 
 # set default editor
 export EDITOR='vim'
+
+# set default terminal-emulator
+#export TERMINAl='/usr/bin/urxvt'
 
 # set zsh mode to vi
 set -o vi
