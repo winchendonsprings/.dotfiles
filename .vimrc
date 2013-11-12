@@ -131,6 +131,7 @@ Bundle 'mhinz/vim-signify'
 "Bundle 'Shougo/neocomplcache'
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
+Bundle 'PotatoesMaster/i3-vim-syntax'
 
 "" themes
 Bundle 'altercation/vim-colors-solarized'

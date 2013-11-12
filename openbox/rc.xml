@@ -342,7 +342,8 @@
     <keybind key="A-F2">
       <action name="Execute">
         <!--<execute>dmenu_run -p '&gt;&gt;&gt;&gt;&gt;' -i -fn 'Droid Sans Mono-10' -nb '#fefefe' -nf '#010101' -sb '#FF0000' -sf '#FFFFFF' </execute>-->
-        <execute>dmenu_run -p '&gt;&gt;&gt;&gt;&gt;' -i -fn '-*-terminal-*-*-*-*-*-*-*-*-*-*-*-*' -nb '#fefefe' -nf '#010101' -sb '#FF0000' -sf '#FFFFFF' </execute>
+<!--#        <execute>dmenu_run -p '&gt;&gt;&gt;&gt;&gt;' -i -fn '-*-terminal-*-*-*-*-*-*-*-*-*-*-*-*' -nb '#fefefe' -nf '#010101' -sb '#FF0000' -sf '#FFFFFF' </execute>-->
+        <execute>dmenu_run -i</execute>
       </action>
     </keybind>
     <keybind key="A-S-d">
