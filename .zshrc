@@ -45,7 +45,7 @@ alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 #alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
-alias mail='sh /home/ry/Documents/mailsync.sh'
+alias mailsync='sh /home/ry/Documents/mailsync.sh'
 #pretty git logs
 #alias git l="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -97,4 +97,25 @@ export EDITOR='vim'
 #export TERMINAl='/usr/bin/urxvt'
 
 # set zsh mode to vi
-set -o vi
+#set -o vi
+bindkey -v
+
+# mode vim mode style from http://dougblack.io/words/zsh-vi-mode.html
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+#function zle-line-init zle-keymap-select {
+#VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+#RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
+#zle reset-prompt
+#}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+# removes the lag between swithing from command to insertmode in vi-mode
+export	KEYTIMEOUT=1
