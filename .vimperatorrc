@@ -11,6 +11,7 @@ set hintchars=asdfghjklqwertyuiopzxcvbnm
 "set editor="rxvt-unicode -geometry 120x20 -e vim -c set colorscheme=Tomorrow"
 set editor="rxvt-unicode -geometry 120x20 -e vim"
 "set editor=gnome-terminal --disable-factory --geometry=120x20 --execute vim
+set editor="xterm -geometry 120x20 -e vim"
 
 """"" Colorscheme, see :help highlight for elements to style etc;
 highlight Hint padding:0 2px 0 2px; font-size:12px; font-weight:bold; color:#fff; background-color:#0000ff; border:1px solid #fff;
