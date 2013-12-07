@@ -116,7 +116,7 @@ set sidebar_sort=yes
 macro index b "<enter-command>toggle sidebar_visible<enter>"
 macro pager b "<enter-command>toggle sidebar_visible<enter>"
 # which mailboxes to list in the sidebar
-mailboxes =INBOX =GV =LCA =LCM
+mailboxes =INBOX =GV =LCM
 # color of folders with new mail
 color sidebar_new yellow default
 # ctrl-n, ctrl-p to select next, prev folder

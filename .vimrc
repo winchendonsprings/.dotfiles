@@ -155,6 +155,7 @@ set laststatus=2
 
 " add colors
 set t_Co=256
+"set t_Co=16
 
 " colorscheme hybrid
 " colorscheme inkpot
@@ -201,7 +202,6 @@ let g:airline_right_sep=''
 let g:airline_powerline_fonts=0
 "let g:airline#extensions#tabline#enabled=1
 "let g:airline_theme='powerlineish'
-
 
 " allows :w!! to save if you forgot to open a readonly without perms
 cmap w!! %!sudo tee > /dev/null %
