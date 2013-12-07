@@ -148,8 +148,8 @@ Bundle 'wombat256.vim'
 "Bundle 'peaksea'
 "Bundle 'fruity.vim'
 "Bundle 'pyte.vim'
-Bundle 'summerfruit256.vim'
-Bundle 'oceanlight.vim'
+"Bundle 'summerfruit256.vim'
+"Bundle 'oceanlight.vim'
 
 set laststatus=2
 
