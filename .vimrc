@@ -164,6 +164,9 @@ Bundle 'wombat256.vim'
 
 "second part of auto installing vundle
 if iCanHazVundle == 0
+  echo "Installing Bundles, please ignore key map error messages"
+  echo ""
+  :BundleInstall
 endif
 
 
