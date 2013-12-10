@@ -10,6 +10,8 @@ if [[ "$HOST" == "g62x" ]]; then
   ZSH_THEME="../../.dotfiles/simple-lap"						#laptop
 elif [[ "$HOST" == "devbox" ]]; then
   ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
+elif [[ "$HOST" == "precise32" ]]; then
+  ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
 elif [[ "$HOST" == "debian" ]]; then
   ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
 fi

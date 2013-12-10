@@ -173,6 +173,8 @@ if hostname() == "g62x"
   set background=dark
 elseif hostname() == "devbox"
   colorscheme jellybeans
+elseif hostname() == "precise32"
+  colorscheme jellybeans
 elseif hostname() == "debian"
   colorscheme molokai
 endif
