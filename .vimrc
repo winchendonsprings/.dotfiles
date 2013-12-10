@@ -86,6 +86,17 @@ endif
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+" first part of auto Installing vundle
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+  echo "Installing Vundle.."
+  echo ""
+  silent !mkdir -p ~/.vim/bundle
+  silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+  let iCanHazVundle=0
+endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -150,6 +161,11 @@ Bundle 'wombat256.vim'
 "Bundle 'pyte.vim'
 "Bundle 'summerfruit256.vim'
 "Bundle 'oceanlight.vim'
+
+"second part of auto installing vundle
+if iCanHazVundle == 0
+endif
+
 
 set laststatus=2
 
