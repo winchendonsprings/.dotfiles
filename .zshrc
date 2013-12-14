@@ -76,7 +76,7 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man command-not-found debian extract rsync vi-mode vundle)
+plugins=(git git-extras gitfast autojump colored-man command-not-found debian extract gem pip rsync vagrant vi-mode vundle)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,7 +90,8 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -
 #cat .art
 
 # base 16 shell
-source /home/ry/.dotfiles/base16-default.dark-shell.sh
+#source /home/ry/.dotfiles/base16-default.dark-shell.sh
+source $HOME/.dotfiles/base16-default.dark-shell.sh
 
 # set default editor
 export EDITOR='vim'
