@@ -1,5 +1,4 @@
 #ryan
-gtk-icon-theme-name = "Faience-Azur"
-gtk-theme-name = "Greybird"
-gtk-font-name = "DejaVu Sans 8"
-gtk-toolbar-style   = GTK_TOOLBAR_TEXT	#Only text 
+include "/home/ry/.gtkrc.mine"
+#include "/usr/share/themes/Greybird/gtk-2.0/gtkrc"
+include "/usr/share/themes/Numix/gtk-2.0/gtkrc"
