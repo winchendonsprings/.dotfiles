@@ -15,19 +15,19 @@
 # 47
 # 82 <-- lighter
 
-color normal		color43		default
-color error		color47		color0
+color normal		color43		color0
+color error			color47		color0
 color markers		color63		color0
-color tilde		color35		color0
-color status		color47		color0
+color tilde			color35		color0
+color status		color113	color0
 
 # index stuff
-color tree		color106	color0
-color indicator		color107	color22
-color index		color108	color0 ~A
-color index		color186	color0 ~N
-color index		color149	color0 ~O
-color index		color113	color0 ~F
+color tree			color108	color0
+color indicator		color208	color0
+color index			color108	color0 ~A
+color index			color186	color0 ~N
+color index			color149	color0 ~O
+color index			color113	color0 ~F
 
 # header stuff
 color hdrdefault	color70		color0
