@@ -1666,3 +1666,16 @@ Xft.rgba:		 		rgb
 Xft.hinting:	 		true
 Xft.hintstyle:	 		hintslight
 !------------------------------------------
+
+! Mouse pointer foreground colour.
+URxvt*pointerColor: #151515
+
+! Mouse pointer background colour.
+URxvt*pointerColor2: #151515
+
+!load scripts
+URxvt.perl-lib: /home/ry/.urxvt/perl/
+!set up clipboard for copy and pasting
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
