@@ -20,7 +20,8 @@ set move=no # Don't move mail from spool
 set header_cache=$HOME/.mail/.headercache
 # If not set in ~/.bashrc:
 # set spoolfile = /var/spool/mail/john
-set spoolfile ="+[Gmail].All Mail"
+#set spoolfile ="+[Gmail].All Mail"
+set spoolfile ="+INBOX"
 #======================================================#
 # Watch these mailboxes for new mail, useful only if
 # Procmail or Maildrop is used to sort mail.

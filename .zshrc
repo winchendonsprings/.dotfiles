@@ -21,6 +21,7 @@ fi
 #alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias cl='clear'
 alias p='pwd'
+alias note='vim /home/ry/Dropbox/note.txt'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
 alias ack='ack-grep'
@@ -29,6 +30,7 @@ alias bitlbee-on='bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee
 alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias offlineimap-bl='offlineimap -u blinkenlights'
 alias weather='sh ~/Documents/weatherpdx.sh'
+alias mpg123='mpg123 --title --verbose --control'
 alias sudo aptitude='nocorrect sudo aptitude'
 alias aptitude='nocorrect aptitude'
 alias sudo='nocorrect sudo'
@@ -38,6 +40,7 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 alias k9='kill -9'
+alias k15='kill -15'
 #alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30' #show frequntly used commands
 alias freq='cut -f1 -d" " ~/.zsh_history | sort | uniq -c | sort -nr | head -n 30' #show frequntly used commands
 alias l='ls -lah' #show only folders
@@ -77,17 +80,17 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man command-not-found debian extract gem pip rsync vagrant vi-mode vundle)
+plugins=(git git-extras gitfast autojump colored-man command-not-found extract gem pip rsync vagrant vi-mode vundle )
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 DEFAULT_USER='ry'
 
-# this will display the pwd in TMUX
+# this will display the pwd in TMUX prompt
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
-# display art in new shell
+# display art in new shells
 #cat .art
 
 # base 16 shell
