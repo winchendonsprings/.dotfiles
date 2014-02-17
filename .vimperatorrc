@@ -9,7 +9,7 @@ set noscrollbars
 set hintchars=asdfghjklqwertyuiopzxcvbnm
 
 "set editor=vim -f
-set editor="rxvt-unicode -geometry 120x20 -e vim -c set colorscheme=Tomorrow"
+set editor="rxvt-unicode -geometry 120x20 -e vim -c colorscheme=Tomorrow"
 "set editor=gnome-terminal --disable-factory --geometry=120x20 --execute vim
 "set editor="xterm -geometry 120x20 -e vim"
 
