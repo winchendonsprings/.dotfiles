@@ -37,6 +37,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'PotatoesMaster/i3-vim-syntax'
 Bundle 'spf13/PIV'
 Bundle 'taglist.vim'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'edsono/vim-matchit'
 " snipmate start
 Bundle 'garbas/vim-snipmate'
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -181,6 +183,12 @@ let NERDTreeShowHidden=1                 " Show hidden files in nerdtree by defa
 
 " Taglist shortcut
 nmap <leader>tl :TlistToggle<cr>
+
+" Rainbow Parenthasis shortcut
+nmap <leader>rp :RainbowParenthesesToggle<cr>
+
+" Gundo toggle shortcut
+nmap <leader>gu :GundoToggle<cr>
 
 " syntastic enabled
 let g:syntastic_check_on_open = 1
