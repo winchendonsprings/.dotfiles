@@ -1679,3 +1679,5 @@ URxvt.perl-lib: /home/ry/.urxvt/perl/
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
+
+URxvt*saveLines: 10000
