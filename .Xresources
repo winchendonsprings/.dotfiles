@@ -1,7 +1,7 @@
 ! Compile xft: Attempt to find a visual with the given bit depth; option -depth.
 ! URxvt*depth: bitdepth
 
-! Compile xft: Turn on/off double-buffering for xft (default enabled).  On some
+! Compile xft: Turn on/off double-buffering for xft (default enabled). On some
 ! URxvt*buffered: boolean
 
 ! Create the window with the specified X window geometry [default 80x24]; option
@@ -18,7 +18,7 @@
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-
 ! URxvt*colorn: colour
 
-! 
+!
 ! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when the foreground
@@ -64,7 +64,7 @@
 ! Tint the transparent background with the given colour. If the RENDER extension is not
 ! URxvt*tintColor: colour
 
-! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.  A value of 100
+! Darken (0 .. 99) or lighten (101 .. 200) the transparent background. A value of 100
 ! URxvt*shading: number
 
 ! Specify background blending type; option -blt.
@@ -103,7 +103,7 @@
 
 ! URxvt*boldFont: fontlist
 
-! 
+!
 ! URxvt*italicFont: fontlist
 
 ! The font list to use for displaying bold, italic or bold italic characters,
@@ -121,10 +121,10 @@
 ! True: de-iconify (map) on receipt of a bell character. False: no de-iconify (map) on
 ! URxvt*mapAlert: boolean
 
-! True: set the urgency hint for the wm on receipt of a bell character.  False: do not
+! True: set the urgency hint for the wm on receipt of a bell character. False: do not
 ! URxvt*urgentOnBell: boolean
 
-! True: use visual bell on receipt of a bell character; option -vb.  False: no visual
+! True: use visual bell on receipt of a bell character; option -vb. False: no visual
 ! URxvt*visualBell: boolean
 
 ! True: start as a login shell by prepending a - to argv[0] of the shell; option -ls.
@@ -145,19 +145,19 @@
 ! True: enable the scrollbar [default]; option -sb. False: disable the scrollbar; option
 ! URxvt*scrollBar: boolean
 
-! True: place the scrollbar on the right of the window; option -sr.  False: place the
+! True: place the scrollbar on the right of the window; option -sr. False: place the
 ! URxvt*scrollBar_right: boolean
 
-! True: display an rxvt scrollbar without a trough; option -st.  False: display an rxvt
+! True: display an rxvt scrollbar without a trough; option -st. False: display an rxvt
 ! URxvt*scrollBar_floating: boolean
 
 ! Align the top, bottom or centre [default] of the scrollbar thumb with the pointer on
 ! URxvt*scrollBar_align: mode
 
-! True: scroll to bottom when tty receives output; option -si.  False: do not scroll to
+! True: scroll to bottom when tty receives output; option -si. False: do not scroll to
 ! URxvt*scrollTtyOutput: boolean
 
-! True: scroll with scrollback buffer when tty receives new lines (i.e.  try to show the
+! True: scroll with scrollback buffer when tty receives new lines (i.e. try to show the
 ! URxvt*scrollWithBuffer: boolean
 
 ! True: scroll to bottom when a non-special key is pressed. Special keys are those which
@@ -222,7 +222,7 @@
 ! The characters used as delimiters for double-click word selection (whitespace
 ! URxvt*cutchars: string
 
-! 
+!
 ! URxvt*{|}
 
 ! OverTheSpot, OffTheSpot, Root; option -pt.
@@ -231,7 +231,7 @@
 ! name of inputMethod to use; option -im.
 ! URxvt*inputMethod: name
 
-! The locale to use for opening the IM. You can use an "LC_CTYPE" of e.g.  "de_DE.UTF-8"
+! The locale to use for opening the IM. You can use an "LC_CTYPE" of e.g. "de_DE.UTF-8"
 ! URxvt*imLocale: name
 
 ! Specify the font-set used for XIM styles "OverTheSpot" or "OffTheSpot". It must be a
@@ -300,19 +300,19 @@
 ! Turn on/off ISO 14755 5.2 mode (default enabled).@@@@THE SCROLLBAR
 ! URxvt*iso14755_52: boolean
 
-! 
+!
 ! URxvt*scrolled back using the scrollbar or by keystrokes. The normal urxvt scrollbar has arrows
 
-! 
+!
 ! URxvt*and its behaviour is fairly intuitive. The xterm-scrollbar is without arrows and its
 
-! Scroll down with Button1 (xterm-scrollbar) or Shift-Next.  Scroll up with Button3 (xterm-
+! Scroll down with Button1 (xterm-scrollbar) or Shift-Next. Scroll up with Button3 (xterm-
 ! URxvt*behaviour mimics that of xterm
 
 ! MOUSE REPORTING
-! URxvt*scrollbar) or Shift-Prior.  Continuous scroll with Button2.
+! URxvt*scrollbar) or Shift-Prior. Continuous scroll with Button2.
 
-! 
+!
 ! URxvt*selection/insertion, hold either the Shift or the Meta (Alt) key while performing the
 
 ! If mouse reporting mode is active, the normal scrollbar actions are disabled -- on the
@@ -329,88 +329,88 @@
 
 ! URxvt*rxvt-unicode will automatically re-apply these fonts to the output so far.
 
-! 
+!
 ! URxvt*using the keyboard. It consists of 4 parts. The first part is available if rxvt-unicode
 
-! 
+!
 ! URxvt*has been compiled with "--enable-frills", the rest is available when rxvt-unicode was
 
-! ·   5.1: Basic method
+! · 5.1: Basic method
 ! URxvt*compiled with "--enable-iso14755".
 
 ! LOGIN STAMP
 ! URxvt*and B of ISO 14755, including part 5.2.
 
-! 
+!
 ! URxvt*urxvt tries to write an entry into the utmp(5) file so that it can be seen via the who(1)
 
-! 
-! URxvt*command, and can accept messages.  To allow this feature, urxvt may need to be installed
+!
+! URxvt*command, and can accept messages. To allow this feature, urxvt may need to be installed
 
 ! COLOURS AND GRAPHICS
 ! URxvt*setuid root on some systems or setgid to root or to some other group on others.
 
-! 
+!
 ! URxvt*the same, and 72 (or 240 in 256 colour mode) colours arranged in an 4x4x4 (or 6x6x6)
 
 ! Here is a list of the ANSI colours with their names.
 ! URxvt*colour RGB cube plus a 8 (24) colour greyscale ramp.
 
-! 
-! URxvt*color0       (black)            = Black
+!
+! URxvt*color0 (black) = Black
 
-! 
-! URxvt*color1       (red)              = Red3
+!
+! URxvt*color1 (red) = Red3
 
-! 
-! URxvt*color2       (green)            = Green3
+!
+! URxvt*color2 (green) = Green3
 
-! 
-! URxvt*color3       (yellow)           = Yellow3
+!
+! URxvt*color3 (yellow) = Yellow3
 
-! 
-! URxvt*color4       (blue)             = Blue3
+!
+! URxvt*color4 (blue) = Blue3
 
-! 
-! URxvt*color5       (magenta)          = Magenta3
+!
+! URxvt*color5 (magenta) = Magenta3
 
-! 
-! URxvt*color6       (cyan)             = Cyan3
+!
+! URxvt*color6 (cyan) = Cyan3
 
-! 
-! URxvt*color7       (white)            = AntiqueWhite
+!
+! URxvt*color7 (white) = AntiqueWhite
 
-! 
-! URxvt*color8       (bright black)     = Grey25
+!
+! URxvt*color8 (bright black) = Grey25
 
-! 
-! URxvt*color9       (bright red)       = Red
+!
+! URxvt*color9 (bright red) = Red
 
-! 
-! URxvt*color10      (bright green)     = Green
+!
+! URxvt*color10 (bright green) = Green
 
-! 
-! URxvt*color11      (bright yellow)    = Yellow
+!
+! URxvt*color11 (bright yellow) = Yellow
 
-! 
-! URxvt*color12      (bright blue)      = Blue
+!
+! URxvt*color12 (bright blue) = Blue
 
-! 
-! URxvt*color13      (bright magenta)   = Magenta
+!
+! URxvt*color13 (bright magenta) = Magenta
 
-! 
-! URxvt*color14      (bright cyan)      = Cyan
+!
+! URxvt*color14 (bright cyan) = Cyan
 
-! 
-! URxvt*color15      (bright white)     = White
+!
+! URxvt*color15 (bright white) = White
 
-! 
-! URxvt*foreground                      = Black
+!
+! URxvt*foreground = Black
 
 ! It is also possible to specify the colour values of foreground, background, cursorColor,
-! URxvt*background                      = White
+! URxvt*background = White
 
-! 
+!
 ! URxvt*cursorColor2, colorBD, colorUL as a number 0-15, as a convenient shorthand to reference
 
 ! The following text gives values for the standard 88 colour mode (and values for the 256
@@ -419,7 +419,7 @@
 ! The RGB cube uses indices 16..79 (16..231) using the following formulas:
 ! URxvt*colour mode in parentheses).
 
-! 
+!
 ! URxvt*can be changed using resources currently, the rest can only be changed via command
 
 ! Applications are advised to use terminfo or command sequences to discover number and RGB
@@ -428,7 +428,7 @@
 ! Note that -rv ("reverseVideo: True") simulates reverse video by always swapping the
 ! URxvt*values of all colours (yes, you can query this...).
 
-! 
+!
 ! URxvt*foreground/background colours. This is in contrast to xterm(1) where the colours are only
 
 ! urxvt -fg Black -bg White -rv
@@ -443,19 +443,19 @@
 ! "[50]red" is a half-transparent red, while "[95]#00ff00" is an almost opaque green. This
 ! URxvt*the colour, where 0 is completely transparent and 100 is completely opaque. For example,
 
-! 
+!
 ! URxvt*is the recommended format to specify transparency values, and works with all ways to
 
 ! For complete control, rxvt-unicode also supports "rgba:rrrr/gggg/bbbb/aaaa" (exactly four
 ! URxvt*specify a colour.
 
-! 
+!
 ! URxvt*hex digits/component) colour specifications, where the additional "aaaa" component
 
-! 
+!
 ! URxvt*specifies opacity (alpha) values. The minimum value of 0000 is completely transparent,
 
-! 
+!
 ! URxvt*while "ffff" is completely opaque). The two example colours from earlier could also be
 
 ! You probably need to specify "-depth 32", too, to force a visual with alpha channels, and
@@ -470,13 +470,13 @@
 ! When using a background pixmap or pseudo-transparency, then the background colour will
 ! URxvt*your compositing manager (most interpret it as transparency of course).
 
-! 
+!
 ! URxvt*always behave as if it were completely transparent (so the background image shows
 
-! 
+!
 ! URxvt*instead), regardless of how it was specified, while other colours will either be
 
-! 
+!
 ! URxvt*transparent as specified (the background image will show through) on servers supporting
 
 ! Please note that due to bugs in Xft, specifying alpha values might result in garbage being
@@ -498,7 +498,7 @@
 ! Compile xft: Attempt to find a visual with the given bit depth; option
 ! URxvt*depth: bitdepth
 
-! Compile xft: Turn on/off double-buffering for xft (default enabled).  On
+! Compile xft: Turn on/off double-buffering for xft (default enabled). On
 ! URxvt*buffered: boolean
 
 ! Create the window with the specified X window geometry [default 80x24];
@@ -514,7 +514,7 @@
 ! Use the specified colour for the colour value n, where 0-7 corresponds to
 ! URxvt*colorn: colour
 
-! 
+!
 ! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when the
@@ -559,7 +559,7 @@
 ! Tint the transparent background with the given colour. If the RENDER
 ! URxvt*tintColor: colour
 
-! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.  A
+! Darken (0 .. 99) or lighten (101 .. 200) the transparent background. A
 ! URxvt*shading: number
 
 ! Specify background blending type; option -blt.
@@ -591,7 +591,7 @@
 
 ! URxvt*boldFont: fontlist
 
-! 
+!
 ! URxvt*italicFont: fontlist
 
 ! The font list to use for displaying bold, italic or bold italic characters,
@@ -612,7 +612,7 @@
 ! True: set the urgency hint for the wm on receipt of a bell character.
 ! URxvt*urgentOnBell: boolean
 
-! True: use visual bell on receipt of a bell character; option -vb.  False: no
+! True: use visual bell on receipt of a bell character; option -vb. False: no
 ! URxvt*visualBell: boolean
 
 ! True: start as a login shell by prepending a - to argv[0] of the shell;
@@ -633,19 +633,19 @@
 ! True: enable the scrollbar [default]; option -sb. False: disable the
 ! URxvt*scrollBar: boolean
 
-! True: place the scrollbar on the right of the window; option -sr.  False:
+! True: place the scrollbar on the right of the window; option -sr. False:
 ! URxvt*scrollBar_right: boolean
 
-! True: display an rxvt scrollbar without a trough; option -st.  False:
+! True: display an rxvt scrollbar without a trough; option -st. False:
 ! URxvt*scrollBar_floating: boolean
 
 ! Align the top, bottom or centre [default] of the scrollbar thumb with the
 ! URxvt*scrollBar_align: mode
 
-! True: scroll to bottom when tty receives output; option -si.  False: do not
+! True: scroll to bottom when tty receives output; option -si. False: do not
 ! URxvt*scrollTtyOutput: boolean
 
-! True: scroll with scrollback buffer when tty receives new lines (i.e.  try
+! True: scroll with scrollback buffer when tty receives new lines (i.e. try
 ! URxvt*scrollWithBuffer: boolean
 
 ! True: scroll to bottom when a non-special key is pressed. Special keys are
@@ -709,7 +709,7 @@
 ! The characters used as delimiters for double-click word selection
 ! URxvt*cutchars: string
 
-! 
+!
 ! URxvt*{|}
 
 ! OverTheSpot, OffTheSpot, Root; option -pt.
@@ -786,16 +786,16 @@
 ! Turn on/off ISO 14755 5.2 mode (default enabled).@@@@THE SCROLLBAR
 ! URxvt*iso14755_52: boolean
 
-! 
+!
 ! URxvt*and can be scrolled back using the scrollbar or by keystrokes. The normal urxvt
 
-! 
+!
 ! URxvt*scrollbar has arrows and its behaviour is fairly intuitive. The xterm-scrollbar
 
-! Scroll down with Button1 (xterm-scrollbar) or Shift-Next.  Scroll up with
+! Scroll down with Button1 (xterm-scrollbar) or Shift-Next. Scroll up with
 ! URxvt*is without arrows and its behaviour mimics that of xterm
 
-! 
+!
 ! URxvt*text selection/insertion, hold either the Shift or the Meta (Alt) key while
 
 ! If mouse reporting mode is active, the normal scrollbar actions are disabled --
@@ -812,97 +812,97 @@
 
 ! URxvt*rxvt-unicode will automatically re-apply these fonts to the output so far.
 
-! 
+!
 ! URxvt*character codes using the keyboard. It consists of 4 parts. The first part is
 
-! 
+!
 ! URxvt*available if rxvt-unicode has been compiled with "--enable-frills", the rest is
 
-! ·   5.1: Basic method
+! · 5.1: Basic method
 ! URxvt*available when rxvt-unicode was compiled with "--enable-iso14755".
 
 ! LOGIN STAMP
 ! URxvt*scenario A and B of ISO 14755, including part 5.2.
 
-! 
+!
 ! URxvt*urxvt tries to write an entry into the utmp(5) file so that it can be seen via
 
-! 
-! URxvt*the who(1) command, and can accept messages.  To allow this feature, urxvt may
+!
+! URxvt*the who(1) command, and can accept messages. To allow this feature, urxvt may
 
-! 
+!
 ! URxvt*need to be installed setuid root on some systems or setgid to root or to some
 
 ! COLOURS AND GRAPHICS
 ! URxvt*other group on others.
 
-! 
+!
 ! URxvt*up to 88/256 colours: 8 ANSI colours plus high-intensity (potentially
 
-! 
+!
 ! URxvt*bold/blink) versions of the same, and 72 (or 240 in 256 colour mode) colours
 
-! 
+!
 ! URxvt*arranged in an 4x4x4 (or 6x6x6) colour RGB cube plus a 8 (24) colour greyscale
 
 ! Here is a list of the ANSI colours with their names.
 ! URxvt*ramp.
 
-! 
-! URxvt*color0       (black)            = Black
+!
+! URxvt*color0 (black) = Black
 
-! 
-! URxvt*color1       (red)              = Red3
+!
+! URxvt*color1 (red) = Red3
 
-! 
-! URxvt*color2       (green)            = Green3
+!
+! URxvt*color2 (green) = Green3
 
-! 
-! URxvt*color3       (yellow)           = Yellow3
+!
+! URxvt*color3 (yellow) = Yellow3
 
-! 
-! URxvt*color4       (blue)             = Blue3
+!
+! URxvt*color4 (blue) = Blue3
 
-! 
-! URxvt*color5       (magenta)          = Magenta3
+!
+! URxvt*color5 (magenta) = Magenta3
 
-! 
-! URxvt*color6       (cyan)             = Cyan3
+!
+! URxvt*color6 (cyan) = Cyan3
 
-! 
-! URxvt*color7       (white)            = AntiqueWhite
+!
+! URxvt*color7 (white) = AntiqueWhite
 
-! 
-! URxvt*color8       (bright black)     = Grey25
+!
+! URxvt*color8 (bright black) = Grey25
 
-! 
-! URxvt*color9       (bright red)       = Red
+!
+! URxvt*color9 (bright red) = Red
 
-! 
-! URxvt*color10      (bright green)     = Green
+!
+! URxvt*color10 (bright green) = Green
 
-! 
-! URxvt*color11      (bright yellow)    = Yellow
+!
+! URxvt*color11 (bright yellow) = Yellow
 
-! 
-! URxvt*color12      (bright blue)      = Blue
+!
+! URxvt*color12 (bright blue) = Blue
 
-! 
-! URxvt*color13      (bright magenta)   = Magenta
+!
+! URxvt*color13 (bright magenta) = Magenta
 
-! 
-! URxvt*color14      (bright cyan)      = Cyan
+!
+! URxvt*color14 (bright cyan) = Cyan
 
-! 
-! URxvt*color15      (bright white)     = White
+!
+! URxvt*color15 (bright white) = White
 
-! 
-! URxvt*foreground                      = Black
+!
+! URxvt*foreground = Black
 
 ! It is also possible to specify the colour values of foreground, background,
-! URxvt*background                      = White
+! URxvt*background = White
 
-! 
+!
 ! URxvt*cursorColor, cursorColor2, colorBD, colorUL as a number 0-15, as a convenient
 
 ! The following text gives values for the standard 88 colour mode (and values for
@@ -914,7 +914,7 @@
 ! Together, all those colours implement the 88 (256) colour xterm colours. Only
 ! URxvt*cube.
 
-! 
+!
 ! URxvt*the first 16 can be changed using resources currently, the rest can only be
 
 ! Applications are advised to use terminfo or command sequences to discover number
@@ -923,7 +923,7 @@
 ! Note that -rv ("reverseVideo: True") simulates reverse video by always swapping
 ! URxvt*and RGB values of all colours (yes, you can query this...).
 
-! 
+!
 ! URxvt*the foreground/background colours. This is in contrast to xterm(1) where the
 
 ! urxvt -fg Black -bg White -rv
@@ -935,10 +935,10 @@
 ! You can prefix any colour with an opaqueness percentage enclosed in brackets,
 ! URxvt*act together, rxvt-unicode will do its own alpha channel management:
 
-! 
+!
 ! URxvt*i.e. "[percent]", where "percent" is a decimal percentage (0-100) that specifies
 
-! 
+!
 ! URxvt*the opacity of the colour, where 0 is completely transparent and 100 is
 
 ! "[95]#00ff00" is an almost opaque green. This is the recommended format to
@@ -947,16 +947,16 @@
 ! For complete control, rxvt-unicode also supports "rgba:rrrr/gggg/bbbb/aaaa"
 ! URxvt*specify transparency values, and works with all ways to specify a colour.
 
-! 
+!
 ! URxvt*completely transparent, while "ffff" is completely opaque). The two example
 
 ! "rgba:0000/ff00/0000/f332".
 ! URxvt*colours from earlier could also be specified as "rgba:ff00/0000/0000/8000" and
 
-! 
+!
 ! URxvt*channels, and have the luck that your X-server uses ARGB pixel layout, as X is
 
-! 
+!
 ! URxvt*far from just supporting ARGB visuals out of the box, and rxvt-unicode just
 
 ! For example, the following selects an almost completely transparent black
@@ -968,16 +968,16 @@
 ! When using a background pixmap or pseudo-transparency, then the background
 ! URxvt*is up to your compositing manager (most interpret it as transparency of course).
 
-! 
+!
 ! URxvt*colour will always behave as if it were completely transparent (so the
 
-! 
+!
 ! URxvt*background image shows instead), regardless of how it was specified, while other
 
-! 
+!
 ! URxvt*colours will either be transparent as specified (the background image will show
 
-! 
+!
 ! URxvt*through) on servers supporting the RENDER extension, or fully opaque on servers
 
 ! Please note that due to bugs in Xft, specifying alpha values might result in
@@ -989,7 +989,7 @@
 ! TERM
 ! URxvt*urxvt sets and/or uses the following environment variables:
 
-! 
+!
 ! URxvt*urxvt(7), urxvtc(1), urxvtd(1), xterm(1), sh(1), resize(1), X(1), pty(4),
 
 ! CURRENT PROJECT COORDINATOR
@@ -1002,7 +1002,7 @@
 ! Compile xft: Attempt to find a visual with the given bit depth; option
 ! URxvt*depth: bitdepth
 
-! Compile xft: Turn on/off double-buffering for xft (default enabled).  On
+! Compile xft: Turn on/off double-buffering for xft (default enabled). On
 ! URxvt*buffered: boolean
 
 ! Create the window with the specified X window geometry [default 80x24];
@@ -1017,7 +1017,7 @@
 ! Use the specified colour for the colour value n, where 0-7 corresponds to
 ! URxvt*colorn: colour
 
-! 
+!
 ! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when the
@@ -1062,7 +1062,7 @@
 ! Tint the transparent background with the given colour. If the RENDER
 ! URxvt*tintColor: colour
 
-! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.  A
+! Darken (0 .. 99) or lighten (101 .. 200) the transparent background. A
 ! URxvt*shading: number
 
 ! Specify background blending type; option -blt.
@@ -1094,7 +1094,7 @@
 
 ! URxvt*boldFont: fontlist
 
-! 
+!
 ! URxvt*italicFont: fontlist
 
 ! The font list to use for displaying bold, italic or bold italic characters,
@@ -1115,7 +1115,7 @@
 ! True: set the urgency hint for the wm on receipt of a bell character.
 ! URxvt*urgentOnBell: boolean
 
-! True: use visual bell on receipt of a bell character; option -vb.  False: no
+! True: use visual bell on receipt of a bell character; option -vb. False: no
 ! URxvt*visualBell: boolean
 
 ! True: start as a login shell by prepending a - to argv[0] of the shell;
@@ -1137,20 +1137,20 @@
 ! URxvt*scrollBar: boolean
 !URxvt*scrollBar: false
 
-! True: place the scrollbar on the right of the window; option -sr.  False:
+! True: place the scrollbar on the right of the window; option -sr. False:
 ! URxvt*scrollBar_right: boolean
 !URxvt*scrollBar_right: false
 
-! True: display an rxvt scrollbar without a trough; option -st.  False:
+! True: display an rxvt scrollbar without a trough; option -st. False:
 ! URxvt*scrollBar_floating: boolean
 
 ! Align the top, bottom or centre [default] of the scrollbar thumb with the
 ! URxvt*scrollBar_align: mode
 
-! True: scroll to bottom when tty receives output; option -si.  False: do not
+! True: scroll to bottom when tty receives output; option -si. False: do not
 ! URxvt*scrollTtyOutput: boolean
 
-! True: scroll with scrollback buffer when tty receives new lines (i.e.  try
+! True: scroll with scrollback buffer when tty receives new lines (i.e. try
 ! URxvt*scrollWithBuffer: boolean
 
 ! True: scroll to bottom when a non-special key is pressed. Special keys are
@@ -1216,7 +1216,7 @@
 ! The characters used as delimiters for double-click word selection
 ! URxvt*cutchars: string
 
-! 
+!
 ! URxvt*{|}
 
 ! OverTheSpot, OffTheSpot, Root; option -pt.
@@ -1293,16 +1293,16 @@
 ! Turn on/off ISO 14755 5.2 mode (default enabled).@@@@THE SCROLLBAR
 ! URxvt*iso14755_52: boolean
 
-! 
+!
 ! URxvt*and can be scrolled back using the scrollbar or by keystrokes. The normal urxvt
 
-! 
+!
 ! URxvt*scrollbar has arrows and its behaviour is fairly intuitive. The xterm-scrollbar
 
-! Scroll down with Button1 (xterm-scrollbar) or Shift-Next.  Scroll up with
+! Scroll down with Button1 (xterm-scrollbar) or Shift-Next. Scroll up with
 ! URxvt*is without arrows and its behaviour mimics that of xterm
 
-! 
+!
 ! URxvt*text selection/insertion, hold either the Shift or the Meta (Alt) key while
 
 ! If mouse reporting mode is active, the normal scrollbar actions are disabled --
@@ -1319,97 +1319,97 @@
 
 ! URxvt*rxvt-unicode will automatically re-apply these fonts to the output so far.
 
-! 
+!
 ! URxvt*character codes using the keyboard. It consists of 4 parts. The first part is
 
-! 
+!
 ! URxvt*available if rxvt-unicode has been compiled with "--enable-frills", the rest is
 
-! ·   5.1: Basic method
+! · 5.1: Basic method
 ! URxvt*available when rxvt-unicode was compiled with "--enable-iso14755".
 
 ! LOGIN STAMP
 ! URxvt*scenario A and B of ISO 14755, including part 5.2.
 
-! 
+!
 ! URxvt*urxvt tries to write an entry into the utmp(5) file so that it can be seen via
 
-! 
-! URxvt*the who(1) command, and can accept messages.  To allow this feature, urxvt may
+!
+! URxvt*the who(1) command, and can accept messages. To allow this feature, urxvt may
 
-! 
+!
 ! URxvt*need to be installed setuid root on some systems or setgid to root or to some
 
 ! COLOURS AND GRAPHICS
 ! URxvt*other group on others.
 
-! 
+!
 ! URxvt*up to 88/256 colours: 8 ANSI colours plus high-intensity (potentially
 
-! 
+!
 ! URxvt*bold/blink) versions of the same, and 72 (or 240 in 256 colour mode) colours
 
-! 
+!
 ! URxvt*arranged in an 4x4x4 (or 6x6x6) colour RGB cube plus a 8 (24) colour greyscale
 
 ! Here is a list of the ANSI colours with their names.
 ! URxvt*ramp.
 
-! 
-! URxvt*color0       (black)            = Black
+!
+! URxvt*color0 (black) = Black
 
-! 
-! URxvt*color1       (red)              = Red3
+!
+! URxvt*color1 (red) = Red3
 
-! 
-! URxvt*color2       (green)            = Green3
+!
+! URxvt*color2 (green) = Green3
 
-! 
-! URxvt*color3       (yellow)           = Yellow3
+!
+! URxvt*color3 (yellow) = Yellow3
 
-! 
-! URxvt*color4       (blue)             = Blue3
+!
+! URxvt*color4 (blue) = Blue3
 
-! 
-! URxvt*color5       (magenta)          = Magenta3
+!
+! URxvt*color5 (magenta) = Magenta3
 
-! 
-! URxvt*color6       (cyan)             = Cyan3
+!
+! URxvt*color6 (cyan) = Cyan3
 
-! 
-! URxvt*color7       (white)            = AntiqueWhite
+!
+! URxvt*color7 (white) = AntiqueWhite
 
-! 
-! URxvt*color8       (bright black)     = Grey25
+!
+! URxvt*color8 (bright black) = Grey25
 
-! 
-! URxvt*color9       (bright red)       = Red
+!
+! URxvt*color9 (bright red) = Red
 
-! 
-! URxvt*color10      (bright green)     = Green
+!
+! URxvt*color10 (bright green) = Green
 
-! 
-! URxvt*color11      (bright yellow)    = Yellow
+!
+! URxvt*color11 (bright yellow) = Yellow
 
-! 
-! URxvt*color12      (bright blue)      = Blue
+!
+! URxvt*color12 (bright blue) = Blue
 
-! 
-! URxvt*color13      (bright magenta)   = Magenta
+!
+! URxvt*color13 (bright magenta) = Magenta
 
-! 
-! URxvt*color14      (bright cyan)      = Cyan
+!
+! URxvt*color14 (bright cyan) = Cyan
 
-! 
-! URxvt*color15      (bright white)     = White
+!
+! URxvt*color15 (bright white) = White
 
-! 
-! URxvt*foreground                      = Black
+!
+! URxvt*foreground = Black
 
 ! It is also possible to specify the colour values of foreground, background,
-! URxvt*background                      = White
+! URxvt*background = White
 
-! 
+!
 ! URxvt*cursorColor, cursorColor2, colorBD, colorUL as a number 0-15, as a convenient
 
 ! The following text gives values for the standard 88 colour mode (and values for
@@ -1421,7 +1421,7 @@
 ! Together, all those colours implement the 88 (256) colour xterm colours. Only
 ! URxvt*cube.
 
-! 
+!
 ! URxvt*the first 16 can be changed using resources currently, the rest can only be
 
 ! Applications are advised to use terminfo or command sequences to discover number
@@ -1430,7 +1430,7 @@
 ! Note that -rv ("reverseVideo: True") simulates reverse video by always swapping
 ! URxvt*and RGB values of all colours (yes, you can query this...).
 
-! 
+!
 ! URxvt*the foreground/background colours. This is in contrast to xterm(1) where the
 
 ! urxvt -fg Black -bg White -rv
@@ -1442,10 +1442,10 @@
 ! You can prefix any colour with an opaqueness percentage enclosed in brackets,
 ! URxvt*act together, rxvt-unicode will do its own alpha channel management:
 
-! 
+!
 ! URxvt*i.e. "[percent]", where "percent" is a decimal percentage (0-100) that specifies
 
-! 
+!
 ! URxvt*the opacity of the colour, where 0 is completely transparent and 100 is
 
 ! "[95]#00ff00" is an almost opaque green. This is the recommended format to
@@ -1454,16 +1454,16 @@
 ! For complete control, rxvt-unicode also supports "rgba:rrrr/gggg/bbbb/aaaa"
 ! URxvt*specify transparency values, and works with all ways to specify a colour.
 
-! 
+!
 ! URxvt*completely transparent, while "ffff" is completely opaque). The two example
 
 ! "rgba:0000/ff00/0000/f332".
 ! URxvt*colours from earlier could also be specified as "rgba:ff00/0000/0000/8000" and
 
-! 
+!
 ! URxvt*channels, and have the luck that your X-server uses ARGB pixel layout, as X is
 
-! 
+!
 ! URxvt*far from just supporting ARGB visuals out of the box, and rxvt-unicode just
 
 ! For example, the following selects an almost completely transparent black
@@ -1475,16 +1475,16 @@
 ! When using a background pixmap or pseudo-transparency, then the background
 ! URxvt*is up to your compositing manager (most interpret it as transparency of course).
 
-! 
+!
 ! URxvt*colour will always behave as if it were completely transparent (so the
 
-! 
+!
 ! URxvt*background image shows instead), regardless of how it was specified, while other
 
-! 
+!
 ! URxvt*colours will either be transparent as specified (the background image will show
 
-! 
+!
 ! URxvt*through) on servers supporting the RENDER extension, or fully opaque on servers
 
 ! Please note that due to bugs in Xft, specifying alpha values might result in
@@ -1496,7 +1496,7 @@
 ! TERM
 ! URxvt*urxvt sets and/or uses the following environment variables:
 
-! 
+!
 ! URxvt*urxvt(7), urxvtc(1), urxvtd(1), xterm(1), sh(1), resize(1), X(1), pty(4),
 
 ! CURRENT PROJECT COORDINATOR
@@ -1514,157 +1514,237 @@
 !Xft.hintstyle: hintslight
 !!------------------------------------------
 !
-! URxvt*termName:           string
-! URxvt*geometry:           geometry
-! URxvt*chdir:              string
-! URxvt*reverseVideo:       boolean
-! URxvt*loginShell:         boolean
-! URxvt*jumpScroll:         boolean
-! URxvt*skipScroll:         boolean
-! URxvt*pastableTabs:       boolean
-! URxvt*scrollstyle:        mode
-! URxvt*scrollBar:          boolean
-! URxvt*scrollBar_right:    boolean
-! URxvt*scrollBar_align:    mode
-! URxvt*thickness:          number
-! URxvt*scrollTtyOutput:    boolean
-! URxvt*scrollTtyKeypress:  boolean
-! URxvt*scrollWithBuffer:   boolean
-! URxvt*inheritPixmap:      boolean
-! URxvt*transparent:        boolean
-! URxvt*tintColor:          color
-! URxvt*shading:            number
-! URxvt*blurRadius:         HxV
-! URxvt*fading:             number
-! URxvt*fadeColor:          color
-! URxvt*utmpInhibit:        boolean
-! URxvt*urgentOnBell:       boolean
-! URxvt*visualBell:         boolean
-! URxvt*mapAlert:           boolean
-! URxvt*meta8:              boolean
-! URxvt*mouseWheelScrollPage:   boolean
-! URxvt*tripleclickwords:   boolean
-! URxvt*insecure:           boolean
-! URxvt*cursorUnderline:    boolean
-! URxvt*cursorBlink:        boolean
-! URxvt*pointerBlank:       boolean
-! URxvt*background:         color
-! URxvt*foreground:         color
-! URxvt*color0:             color
-! URxvt*color1:             color
-! URxvt*color2:             color
-! URxvt*color3:             color
-! URxvt*color4:             color
-! URxvt*color5:             color
-! URxvt*color6:             color
-! URxvt*color7:             color
-! URxvt*color8:             color
-! URxvt*color9:             color
-! URxvt*color10:            color
-! URxvt*color11:            color
-! URxvt*color12:            color
-! URxvt*color13:            color
-! URxvt*color14:            color
-! URxvt*color15:            color
-! URxvt*colorBD:            color
-! URxvt*colorIT:            color
-! URxvt*colorUL:            color
-! URxvt*colorRV:            color
-! URxvt*underlineColor:     color
-! URxvt*scrollColor:        color
-! URxvt*troughColor:        color
-! URxvt*highlightColor:     color
-! URxvt*cursorColor:        color
-! URxvt*cursorColor2:       color
-! URxvt*pointerColor:       color
-! URxvt*pointerColor2:      color
-! URxvt*borderColor:        color
-! URxvt*path:               search path
-! URxvt*backgroundPixmap:   file[;geom]
-! URxvt*iconFile:           file
-! URxvt*font:               fontname
-! URxvt*boldFont:           fontname
-! URxvt*italicFont:         fontname
-! URxvt*boldItalicFont:     fontname
-! URxvt*intensityStyles:    boolean
-! URxvt*inputMethod:        name
-! URxvt*preeditType:        style
-! URxvt*imLocale:           string
-! URxvt*imFont:             fontname
-! URxvt*title:              string
-! URxvt*iconName:           string
-! URxvt*saveLines:          number
-! URxvt*depth:              number
-! URxvt*buffered:           boolean
-! URxvt*transient-for:      windowid
-! URxvt*override-redirect:  boolean
-! URxvt*hold:               boolean
-! URxvt*externalBorder:     number
-! URxvt*internalBorder:     number
-! URxvt*borderLess:         boolean
-! URxvt*lineSpace:          number
-! URxvt*letterSpace:        number
-! URxvt*skipBuiltinGlyphs:  boolean
-! URxvt*pointerBlankDelay:  number
-! URxvt*backspacekey:       string
-! URxvt*deletekey:          string
-! URxvt*print-pipe:         string
-! URxvt*modifier:           modifier
-! URxvt*cutchars:           string
-! URxvt*answerbackString:   string
-! URxvt*secondaryScreen:    boolean
-! URxvt*secondaryScroll:    boolean
-! URxvt*perl-lib:           string
-! URxvt*perl-eval:          perl-eval
-! URxvt*perl-ext-common:    string
-! URxvt*perl-ext:           string
-! URxvt*iso14755:           boolean
-! URxvt*iso14755_52:        boolean
-! URxvt*xrm:                string
-! URxvt*keysym.sym:         keysym
+! URxvt*termName: string
+! URxvt*geometry: geometry
+! URxvt*chdir: string
+! URxvt*reverseVideo: boolean
+! URxvt*loginShell: boolean
+! URxvt*jumpScroll: boolean
+! URxvt*skipScroll: boolean
+! URxvt*pastableTabs: boolean
+! URxvt*scrollstyle: mode
+! URxvt*scrollBar: boolean
+! URxvt*scrollBar_right: boolean
+! URxvt*scrollBar_align: mode
+! URxvt*thickness: number
+! URxvt*scrollTtyOutput: boolean
+! URxvt*scrollTtyKeypress: boolean
+! URxvt*scrollWithBuffer: boolean
+! URxvt*inheritPixmap: boolean
+! URxvt*transparent: boolean
+! URxvt*tintColor: color
+! URxvt*shading: number
+! URxvt*blurRadius: HxV
+! URxvt*fading: number
+! URxvt*fadeColor: color
+! URxvt*utmpInhibit: boolean
+! URxvt*urgentOnBell: boolean
+! URxvt*visualBell: boolean
+! URxvt*mapAlert: boolean
+! URxvt*meta8: boolean
+! URxvt*mouseWheelScrollPage: boolean
+! URxvt*tripleclickwords: boolean
+! URxvt*insecure: boolean
+! URxvt*cursorUnderline: boolean
+! URxvt*cursorBlink: boolean
+! URxvt*pointerBlank: boolean
+! URxvt*background: color
+! URxvt*foreground: color
+! URxvt*color0: color
+! URxvt*color1: color
+! URxvt*color2: color
+! URxvt*color3: color
+! URxvt*color4: color
+! URxvt*color5: color
+! URxvt*color6: color
+! URxvt*color7: color
+! URxvt*color8: color
+! URxvt*color9: color
+! URxvt*color10: color
+! URxvt*color11: color
+! URxvt*color12: color
+! URxvt*color13: color
+! URxvt*color14: color
+! URxvt*color15: color
+! URxvt*colorBD: color
+! URxvt*colorIT: color
+! URxvt*colorUL: color
+! URxvt*colorRV: color
+! URxvt*underlineColor: color
+! URxvt*scrollColor: color
+! URxvt*troughColor: color
+! URxvt*highlightColor: color
+! URxvt*cursorColor: color
+! URxvt*cursorColor2: color
+! URxvt*pointerColor: color
+! URxvt*pointerColor2: color
+! URxvt*borderColor: color
+! URxvt*path: search path
+! URxvt*backgroundPixmap: file[;geom]
+! URxvt*iconFile: file
+! URxvt*font: fontname
+! URxvt*boldFont: fontname
+! URxvt*italicFont: fontname
+! URxvt*boldItalicFont: fontname
+! URxvt*intensityStyles: boolean
+! URxvt*inputMethod: name
+! URxvt*preeditType: style
+! URxvt*imLocale: string
+! URxvt*imFont: fontname
+! URxvt*title: string
+! URxvt*iconName: string
+! URxvt*saveLines: number
+! URxvt*depth: number
+! URxvt*buffered: boolean
+! URxvt*transient-for: windowid
+! URxvt*override-redirect: boolean
+! URxvt*hold: boolean
+! URxvt*externalBorder: number
+! URxvt*internalBorder: number
+! URxvt*borderLess: boolean
+! URxvt*lineSpace: number
+! URxvt*letterSpace: number
+! URxvt*skipBuiltinGlyphs: boolean
+! URxvt*pointerBlankDelay: number
+! URxvt*backspacekey: string
+! URxvt*deletekey: string
+! URxvt*print-pipe: string
+! URxvt*modifier: modifier
+! URxvt*cutchars: string
+! URxvt*answerbackString: string
+! URxvt*secondaryScreen: boolean
+! URxvt*secondaryScroll: boolean
+! URxvt*perl-lib: string
+! URxvt*perl-eval: perl-eval
+! URxvt*perl-ext-common: string
+! URxvt*perl-ext: string
+! URxvt*iso14755: boolean
+! URxvt*iso14755_52: boolean
+! URxvt*xrm: string
+! URxvt*keysym.sym: keysym
 !
 ! ryan
 
-*geometry:				92x46
-*iconFile:				/usr/share/icons/Faience/apps/scalable/utilities-terminal.svg
-*letterSpace:			-1
-*lineSpace:				0
-*scrollBar:				false
-*internalBorder:		5
-*externalBorder:		0
-*borderLess:			false
+*geometry: 92x46
+*iconFile: /usr/share/icons/Faience/apps/scalable/utilities-terminal.svg
+*letterSpace: -1
+*lineSpace: 0
+*scrollBar: false
+*internalBorder: 5
+*externalBorder: 0
+*borderLess: false
 
-*foreground:	 		#d0d0d0
-*background:	 		#151515
-*cursorColor:	 		#d0d0d0
-*color0:		 		#151515
-*color1:		 		#ac4142
-*color2:		 		#90a959
-*color3:		 		#f4bf75
-*color4:		 		#6a9fb5
-*color5:		 		#aa759f
-*color6:		 		#75b5aa
-*color7:		 		#d0d0d0
-*color8:		 		#505050
-*color9:		 		#d28445
-*color10:		 		#202020
-*color11:		 		#303030
-*color12:		 		#b0b0b0
-*color13:		 		#e0e0e0
-*color14:		 		#8f5536
-*color15:		 		#f5f5f5
+*foreground: #d0d0d0
+*background: #151515
+*cursorColor: #d0d0d0
+*color0: #151515
+*color1: #ac4142
+*color2: #90a959
+*color3: #f4bf75
+*color4: #6a9fb5
+*color5: #aa759f
+*color6: #75b5aa
+*color7: #d0d0d0
+*color8: #505050
+*color9: #d28445
+*color10: #202020
+*color11: #303030
+*color12: #b0b0b0
+*color13: #e0e0e0
+*color14: #8f5536
+*color15: #f5f5f5
 
-*font:				 	xft:DejaVu Sans Mono:pixelsize=9
-*boldFont:			 	xft:DejaVu Sans Mono:pixelsize=9
-*italicFont:		 	xft:DejaVu Sans Mono:italic:pixelsize=9
-*boldItalicFont:	 	xft:DejaVu Sans Mono:bolditalic:pixelsize=9
+! Base16 Default
+! Scheme: Chris Kempson (http:
+!
+!#define base00 #151515
+!#define base01 #202020
+!#define base02 #303030
+!#define base03 #505050
+!#define base04 #b0b0b0
+!#define base05 #d0d0d0
+!#define base06 #e0e0e0
+!#define base07 #f5f5f5
+!#define base08 #ac4142
+!#define base09 #d28445
+!#define base0A #f4bf75
+!#define base0B #90a959
+!#define base0C #75b5aa
+!#define base0D #6a9fb5
+!#define base0E #aa759f
+!#define base0F #8f5536
+!
+!*.foreground: base05
+!*.background: base00
+!*.cursorColor: base05
+!*.color0: base00
+!*.color1: base08
+!*.color2: base0B
+!*.color3: base0A
+!*.color4: base0D
+!*.color5: base0E
+!*.color6: base0C
+!*.color7: base05
+!*.color8: base03
+!*.color9: base09
+!*.color10: base01
+!*.color11: base02
+!*.color12: base04
+!*.color13: base06
+!*.color14: base0F
+!*.color15: base07
+
+! Base16 Monokai
+! Scheme: Wimer Hazenberg (http:
+!
+!#define base00 #272822
+!#define base01 #383830
+!#define base02 #49483e
+!#define base03 #75715e
+!#define base04 #a59f85
+!#define base05 #f8f8f2
+!#define base06 #f5f4f1
+!#define base07 #f9f8f5
+!#define base08 #f92672
+!#define base09 #fd971f
+!#define base0A #f4bf75
+!#define base0B #a6e22e
+!#define base0C #a1efe4
+!#define base0D #66d9ef
+!#define base0E #ae81ff
+!#define base0F #cc6633
+!
+!*.foreground: base05
+!*.background: base00
+!*.cursorColor: base05
+!*.color0: base00
+!*.color1: base08
+!*.color2: base0B
+!*.color3: base0A
+!*.color4: base0D
+!*.color5: base0E
+!*.color6: base0C
+!*.color7: base05
+!*.color8: base03
+!*.color9: base09
+!*.color10: base01
+!*.color11: base02
+!*.color12: base04
+!*.color13: base06
+!*.color14: base0F
+!*.color15: base07
+
+*font: xft:DejaVu Sans Mono:pixelsize=9
+*boldFont: xft:DejaVu Sans Mono:pixelsize=9
+*italicFont: xft:DejaVu Sans Mono:italic:pixelsize=9
+*boldItalicFont: xft:DejaVu Sans Mono:bolditalic:pixelsize=9
 
 ! Xft settings ----------------------------
-Xft.dpi:		 		96
-Xft.antialias:	 		true
-Xft.rgba:		 		rgb
-Xft.hinting:	 		true
-Xft.hintstyle:	 		hintslight
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
 !------------------------------------------
 
 ! Mouse pointer foreground colour.
