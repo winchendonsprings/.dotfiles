@@ -23,16 +23,16 @@
 #xrandr --auto --output DVI-I-2 --right-of DVI-I-1 		# multi monitor desktop 
 #xsetroot -cursor_name left_ptr & 						# set X cursor, not needed
 xbindkeys & 											# key shortcuts
-unclutter -root -idle 2.5 & 											# hide mouse cursor
-start-pulseaudio-x11 & 	# start audio
+unclutter -root -idle 2.5 & 							# hide mouse cursor
+start-pulseaudio-x11 & 	                                # start audio
 xrdb -merge ~/.Xresources &								# update x resources db
 urxvtd -q -o -f & 										# rxvt-unicode daemon
 parcellite -n -d & 										# clipboard
 syndaemon -i 2 -d -t -k & 								# disable trackpad until typing is finished
-xscreensaver -no-splash &
+xscreensaver -no-splash &                               # adds lock 
 bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee/ & 	# adds gchat client to irc
 offlineimap & 											# pull email
 hsetroot -solid "#151515" &				 				# set wallpaper to solid color # is this working? 
 #gnome-settings-daemon & 								# all of gnome settings
-exec openbox-session             	 					# starts the window manager
-#exec i3              									# starts the window manager
+#exec openbox-session             	 					# starts the window manager
+exec i3              									# starts the window manager
