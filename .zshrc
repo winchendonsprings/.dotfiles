@@ -7,27 +7,28 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 if [[ "$HOST" == "g62x" ]]; then	 
-  ZSH_THEME="../../.dotfiles/simple-lap"						#laptop
+    ZSH_THEME="../../.dotfiles/simple-lap"						#laptop
 elif [[ "$HOST" == "devbox" ]]; then
-  ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
+    ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
 elif [[ "$HOST" == "precise32" ]]; then
-  ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
+    ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
 elif [[ "$HOST" == "debian" ]]; then
-  ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
+    ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
 fi
 
-# Example aliases
-#alias zshconfig="mate ~/.zshrc"
-#alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias cl='clear'
+alias zshconfig='vim ~/.zshrc'
+alias ohmyzsh='vim ~/.oh-my-zsh'
 alias p='pwd'
 alias note='vim /home/ry/Dropbox/note.txt'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
+alias clock2='watch --no-title -n 1 date +"%H:%M:%S_%A_%B_%d_%Y"'
+alias battery='watch --no-title -n 1 acpi'
+alias dropbox-status='watch -n 1 --no-title dropbox status'
 alias ack='ack-grep'
 alias bitlbee-on='bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee'
 #alias colors='./.dotfiles/colortest.sh -w'
-alias upgrade='sudo git extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
+alias upgrade='sudo git-extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias offlineimap-bl='offlineimap -u blinkenlights'
 alias weather='sh ~/Documents/weatherpdx.sh'
 alias mpg123='mpg123 --title --verbose --control'
@@ -41,6 +42,7 @@ alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 alias k9='kill -9'
 alias k15='kill -15'
+alias watch='watch --no-title'
 #alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30' #show frequntly used commands
 alias freq='cut -f1 -d" " ~/.zsh_history | sort | uniq -c | sort -nr | head -n 30' #show frequntly used commands
 alias l='ls -lah' #show only folders
@@ -52,6 +54,8 @@ alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 #alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
 alias mailsync='sh /home/ry/Documents/mailsync.sh'
+alias archivemail-ry='sh /home/ry/Documents/archive-my-mail'
+alias mplayer-invert='mplayer -vf eq2=1:-1'
 #pretty git logs
 #alias git l="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -80,7 +84,24 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man command-not-found extract gem pip rsync vagrant vi-mode vundle )
+plugins=(
+git
+git-extras
+gitfast
+autojump
+colored-man
+command-not-found
+#common-aliases
+#debian
+extract
+gem
+pip
+rsync
+vagrant
+vi-mode
+vundle
+dirhistory
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,9 +141,11 @@ bindkey '^r' history-incremental-search-backward
 #RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
 #zle reset-prompt
 #}
-
 zle -N zle-line-init
 zle -N zle-keymap-select
 
 # removes the lag between swithing from command to insertmode in vi-mode
 export	KEYTIMEOUT=1
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
