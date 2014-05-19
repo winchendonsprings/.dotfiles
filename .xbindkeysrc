@@ -73,6 +73,9 @@
 "dmenu_run -i"
 Alt + F2
 
+#       "i3-dmenu-desktop"
+#       Alt + F2
+
 # load urxvtc term
 "urxvtc"
 Alt + Return
