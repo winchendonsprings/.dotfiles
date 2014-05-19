@@ -82,6 +82,10 @@ unset mark_old
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 # use lynx (from .mailcap) to view html mails
 auto_view text/html
+
+# archive mail to all mail folder
+macro index,pager A "<save-message>=[Gmail].All Mail<enter>" "Archive Message"
+
 #==============================#
 # shortcuts to Folders
 bind editor <space> noop
@@ -107,19 +111,24 @@ macro index gl "<change-folder>=LCM<enter>" "Go to google left-click folder"
 #source /home/ry/.mutt/ir_green.theme
 source /home/ry/.mutt/ir_green-mod.theme
 #==============================#
+
 #SIDEBAR start
 # set up the sidebar, default not visible
 set sidebar_width=25
 set sidebar_visible=no
 set sidebar_delim='|'
 set sidebar_sort=yes
+
 # b toggles sidebar visibility
 macro index b "<enter-command>toggle sidebar_visible<enter>"
 macro pager b "<enter-command>toggle sidebar_visible<enter>"
+
 # which mailboxes to list in the sidebar
 mailboxes =INBOX =GV =LCM
+
 # color of folders with new mail
 color sidebar_new yellow default
+
 # ctrl-n, ctrl-p to select next, prev folder
 # ctrl-o to open selected folder
 bind index \cp sidebar-prev
@@ -128,4 +137,5 @@ bind index \co sidebar-open
 bind pager \cp sidebar-prev
 bind pager \cn sidebar-next
 bind pager \co sidebar-open
+
 #SIDEBAR stop
