@@ -143,6 +143,10 @@ set t_Co=256
 " Change vims directory when navigatin new files
 set autochdir
 
+" Don't clutter dirs with tmp & swp
+set backupdir=~/.tmp
+set directory=~/.tmp
+
 " note to self easymotion is <leader><leader>w or <leader><leader>b etc...
 
 " Access colors present in 256 colorspace
@@ -150,9 +154,10 @@ let base16colorspace=256
 
 " set colorscheme based on what computer I'm on
 if hostname() == "g62x"
-  colorscheme badwolf
+"  colorscheme badwolf
 "  colorscheme base16-default
-"  set background=dark
+  colorscheme base16-monokai
+  set background=dark
 elseif hostname() == "devbox"
   colorscheme jellybeans
 elseif hostname() == "debian"
@@ -171,7 +176,7 @@ let g:airline_powerline_fonts=0
 
 " Ctrlp mappings
 let g:ctrlp_map = '<c-p>'               " invokes Ctrlp
-"let g:ctrlp_cmd = 'CtrlPBuffer'        " opens ctrlp in buffer mode rather than filesmode
+let g:ctrlp_cmd = 'CtrlPBuffer'        " opens ctrlp in buffer mode rather than filesmode
 let g:ctrlp_clear_cache_on_exit = 0     " does not clear cache after vim close
 "let g:ctrlp_by_filename = 1 	        " search by fuzzy filename rather than path
 let g:ctrlp_match_window_reversed = 0	" start results at top of ctrlp window 
@@ -185,7 +190,7 @@ let NERDTreeShowHidden=1                 " Show hidden files in nerdtree by defa
 nmap <leader>tl :TlistToggle<cr>
 
 " Rainbow Parenthasis shortcut
-nmap <leader>rp :RainbowParenthesesToggle<cr>
+nmap <leader><leader>rp :RainbowParenthesesToggle<cr>
 
 " Gundo toggle shortcut
 nmap <leader>gu :GundoToggle<cr>
