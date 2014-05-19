@@ -2,14 +2,25 @@
 set defsearch=d
 set complete=slbh
 
-"set gui=none
-set gui=tabs
+"switch (liberator.profileName) {
+"    case 'Vimperator':
+"        set gui=none
+"            break;
+"    case 'Dev':
+"        set gui=tabs
+"            break;
+"}
+
+
+set gui=none
+"set gui=tabs
 set noscrollbars
 
 set hintchars=asdfghjklqwertyuiopzxcvbnm
 
 "set editor=vim -f
-set editor="rxvt-unicode -geometry 120x20 -e vim -c colorscheme=Tomorrow"
+"set editor="rxvt-unicode -geometry 120x20 -e vim -c colorscheme=Tomorrow"
+set editor="rxvt-unicode -e vim -c colorscheme=wombat256mod"
 "set editor=gnome-terminal --disable-factory --geometry=120x20 --execute vim
 "set editor="xterm -geometry 120x20 -e vim"
 
