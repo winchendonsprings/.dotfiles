@@ -62,10 +62,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-#bindsym $mod+h split h
+bindsym $mod+v split v
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+g split h
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
@@ -151,10 +151,10 @@ bindsym $mod+r mode "resize"
 
 # Window Colors
 # class        					border  	backgr. 	text		indicator
-client.focused				 	#d0d0d0 	#477995		#eeeeee		#75b5aa		
+client.focused				 	#d0d0d0 	#994422		#eeeeee		#75b5aa		
 client.focused_inactive			#151515 	#151515 	#eeeeee		#75b5aa			
-client.unfocused 				#151515 	#151515 	#eeeeee		#75b5aa		
-client.urgent 					#994444 	#994444 	#eeeeee		#75b5aa		
+client.unfocused 				#151515 	#171717 	#eeeeee		#75b5aa		
+client.urgent 					#ff0000 	#ff0000 	#eeeeee		#75b5aa		
 #bar.focused 					#0000ff 	#cccccc 	#eeeeee		#75b5aa		
 #bar.unfocused					#00ff00 	#cccccc 	#eeeeee		#75b5aa		
 #bar.urgent 					#999999 	#cccccc 	#eeeeee		#75b5aa		
