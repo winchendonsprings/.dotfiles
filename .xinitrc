@@ -29,9 +29,11 @@ xrdb -merge ~/.Xresources &								# update x resources db
 urxvtd -q -o -f & 										# rxvt-unicode daemon
 parcellite -n -d & 										# clipboard
 syndaemon -i 2 -d -t -k & 								# disable trackpad until typing is finished
-xscreensaver -no-splash &                               # adds lock 
+#xscreensaver -no-splash &                               # adds lock 
+xautolock -time 30 -locker "sudo pm-suspend && i3lock -c 000000" -detectsleep &     #auto suspend with screen lock
 bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee/ & 	# adds gchat client to irc
-offlineimap & 											# pull email
+#offlineimap & 											# pull/push email
+~/.dotfiles/mailsync.sh
 hsetroot -solid "#151515" &				 				# set wallpaper to solid color # is this working? 
 #gnome-settings-daemon & 								# all of gnome settings
 #exec openbox-session             	 					# starts the window manager
