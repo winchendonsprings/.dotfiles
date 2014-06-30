@@ -151,9 +151,9 @@ bindsym $mod+r mode "resize"
 
 # Window Colors
 # class        					border  	backgr. 	text		indicator
-client.focused				 	#d0d0d0 	#994422		#eeeeee		#75b5aa		
-client.focused_inactive			#151515 	#151515 	#eeeeee		#75b5aa			
-client.unfocused 				#151515 	#171717 	#eeeeee		#75b5aa		
+client.focused				 	#151515 	#994411		#eeeeee		#75b5aa		
+client.focused_inactive			#151515 	#181818 	#eeeeee		#75b5aa			
+client.unfocused 				#151515 	#181818 	#eeeeee		#75b5aa		
 client.urgent 					#ff0000 	#ff0000 	#eeeeee		#75b5aa		
 #bar.focused 					#0000ff 	#cccccc 	#eeeeee		#75b5aa		
 #bar.unfocused					#00ff00 	#cccccc 	#eeeeee		#75b5aa		
@@ -165,7 +165,7 @@ client.background #151515
 focus_follows_mouse no
 
 #borders for new windows
-new_window pixel 5
+new_window pixel 1
 new_float normal
 
 # Autostart applications like this " exec [--no-startup-id] command "
