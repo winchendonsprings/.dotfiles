@@ -84,24 +84,9 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(
-git
-git-extras
-gitfast
-autojump
-colored-man
-command-not-found
+plugins=(git git-extras gitfast autojump colored-man command-not-found extract gem rsync vagrant vi-mode vundle dirhistory)
 #common-aliases
 #debian
-extract
-gem
-pip
-rsync
-vagrant
-vi-mode
-vundle
-dirhistory
-)
 
 source $ZSH/oh-my-zsh.sh
 
