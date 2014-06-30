@@ -1,0 +1,2 @@
+#!/bin/bash
+archivemail -d30 /home/ry/.mail/GV && archivemail -d30 /home/ry/.mail/LCM && archivemail -d30 /home/ry/.mail/INBOX && archivemail -d30 /home/ry/.mail/[Gmail].Sent\ Mail && archivemail -d30 /home/ry/.mail/[Gmail].All\ Mail 
