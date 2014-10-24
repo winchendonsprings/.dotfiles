@@ -16,8 +16,11 @@ elif [[ "$HOST" == "debian" ]]; then
     ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
 fi
 
-alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
+alias zshconfig='vim ~/.zshrc'
+alias i3config='vim ~/.i3/config'
+alias vimconfig='vim ~/.vimrc'
+alias tmuxconfig='vim ~/.tmux.conf'
 alias p='pwd'
 alias note='vim /home/ry/Dropbox/note.txt'
 alias art='cat /home/ry/.art'
@@ -56,6 +59,8 @@ alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
 alias mailsync='sh /home/ry/Documents/mailsync.sh'
 alias archivemail-ry='sh /home/ry/Documents/archive-my-mail'
 alias mplayer-invert='mplayer -vf eq2=1:-1'
+alias suspend='sudo pm-suspend && i3lock -c 000000'
+alias hibernate='sudo pm-hibernate && i3lock -c 000000'
 #pretty git logs
 #alias git l="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -84,7 +89,7 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man command-not-found extract gem rsync vagrant vi-mode vundle dirhistory)
+plugins=(git git-extras gitfast autojump colored-man command-not-found extract gem rsync vagrant vi-mode vundle dirhistory frontend-search)
 #common-aliases
 #debian
 
