@@ -1,6 +1,10 @@
-"set defsearch=duckduckgo
-set defsearch=d
+set defsearch=duckduckgo
+"set defsearch=d
 set complete=slbh
+set gui=none
+"set gui=tabs
+set noscrollbars
+set hintchars=asdfghjklqwertyuiopzxcvbnm
 
 "switch (liberator.profileName) {
 "    case 'Vimperator':
@@ -11,13 +15,6 @@ set complete=slbh
 "            break;
 "}
 
-
-set gui=none
-"set gui=tabs
-set noscrollbars
-
-set hintchars=asdfghjklqwertyuiopzxcvbnm
-
 "set editor=vim -f
 "set editor="rxvt-unicode -geometry 120x20 -e vim -c colorscheme=Tomorrow"
 set editor="rxvt-unicode -e vim -c colorscheme=wombat256mod"
@@ -25,9 +22,9 @@ set editor="rxvt-unicode -e vim -c colorscheme=wombat256mod"
 "set editor="xterm -geometry 120x20 -e vim"
 
 """"" Colorscheme, see :help highlight for elements to style etc;
-highlight Hint padding:0 2px 0 2px; font-size:12px; font-weight:bold; color:#fff; background-color:#0000ff; border:1px solid #fff;
-highlight HintElem background-color:#fff000;
-highlight Normal background-color:#151515; color:#ddd;
-highlight CmdLine background-color:#151515; color:#ddd;
-"highlight StatusLine background-color:#151515; color:#ddd;
-highlight CompTitle>* background-color:#151515; color:#ddd;
+"       highlight Hint padding:0 2px 0 2px; font-size:12px; font-weight:bold; color:#fff; background-color:#0000ff; border:1px solid #fff;
+"       highlight HintElem background-color:#fff000;
+"       highlight Normal background-color:#151515; color:#ddd;
+"       highlight CmdLine background-color:#151515; color:#ddd;
+"       "highlight StatusLine background-color:#151515; color:#ddd;
+"       highlight CompTitle>* background-color:#151515; color:#ddd;
