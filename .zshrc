@@ -18,7 +18,7 @@ fi
 
 alias ohmyzsh='vim ~/.oh-my-zsh'
 alias zshconfig='vim ~/.zshrc'
-alias i3config='vim ~/.i3/config'
+alias i3config='vim ~/.dotfiles/config-i3'
 alias vimconfig='vim ~/.vimrc'
 alias tmuxconfig='vim ~/.tmux.conf'
 alias p='pwd'
@@ -89,7 +89,7 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man command-not-found extract gem rsync vagrant vi-mode vundle dirhistory frontend-search)
+plugins=(git git-extras gitfast autojump colored-man colorize command-not-found extract gem history history-substring-search rsync vagrant vi-mode vundle dirhistory frontend-search)
 #common-aliases
 #debian
 
@@ -111,6 +111,9 @@ source $HOME/.dotfiles/base16-default.dark-shell.sh
 # set default editor
 export EDITOR='vim'
 
+# share history between terminals
+setopt SHARE_HISTORY
+
 # set default terminal-emulator
 #export TERMINAl='/usr/bin/urxvt'
 
@@ -126,13 +129,15 @@ bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
-#function zle-line-init zle-keymap-select {
-#VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-#RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
-#zle reset-prompt
-#}
-zle -N zle-line-init
-zle -N zle-keymap-select
+#This is in the theme now
+#    function zle-line-init zle-keymap-select {
+#    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+#    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+#    zle reset-prompt
+#    }
+#    
+#    zle -N zle-line-init
+#    zle -N zle-keymap-select
 
 # removes the lag between swithing from command to insertmode in vi-mode
 export	KEYTIMEOUT=1
