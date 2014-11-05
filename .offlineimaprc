@@ -80,3 +80,4 @@ idlefolders = ['INBOX', 'LCM', 'GV']
 #
 #folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCA', 'LCM', 'GV']
 folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail','[Gmail]/Drafts','INBOX', 'LCM', 'GV']
+
