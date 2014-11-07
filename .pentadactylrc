@@ -1,0 +1,4 @@
+set guioptions=bCsn
+set showtabline=always
+set defsearch=duckduckgo
+set editor="rxvt-unicode -e vim"
