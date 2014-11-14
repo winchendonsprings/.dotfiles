@@ -16,12 +16,15 @@ elif [[ "$HOST" == "debian" ]]; then
     ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
 fi
 
+alias startx='ssh-agent startx'
+
 alias ohmyzsh='vim ~/.oh-my-zsh'
 alias zshconfig='vim ~/.zshrc'
 alias i3config='vim ~/.dotfiles/config-i3'
 alias vimconfig='vim ~/.vimrc'
 alias tmuxconfig='vim ~/.tmux.conf'
 alias p='pwd'
+alias ag='ag -S' #case insensitive unless a caps is used
 alias note='vim /home/ry/Dropbox/note.txt'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
@@ -61,6 +64,7 @@ alias archivemail-ry='sh /home/ry/Documents/archive-my-mail'
 alias mplayer-invert='mplayer -vf eq2=1:-1'
 alias suspend='sudo pm-suspend && i3lock -c 000000'
 alias hibernate='sudo pm-hibernate && i3lock -c 000000'
+alias listvms='echo "----------ALL VIRTUAL MACHINES----------" && VBoxManage list vms && echo "----------RUNNING VIRTUAL MACHINES----------" && VBoxManage list runningvms'
 #pretty git logs
 #alias git l="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -144,3 +148,4 @@ export	KEYTIMEOUT=1
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+#eval `keychain --eval id_rsa --clear`
