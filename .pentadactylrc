@@ -2,3 +2,4 @@ set guioptions=bCsn
 set showtabline=always
 set defsearch=duckduckgo
 set editor="rxvt-unicode -e vim"
+highlight Find background-color:#ff0000; color:#000FF0;
