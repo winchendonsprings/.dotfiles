@@ -13,7 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " plugins
-Bundle 'scrooloose/nerdtree'
+"Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 "Bundle 'Lokaltog/vim-powerline'
@@ -24,6 +24,7 @@ Bundle 'AutoComplPop'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-vinegar'
 Bundle 'myusuf3/numbers.vim'
 "Bundle 'airblade/vim-gitgutter'
 Bundle 'mhinz/vim-signify'
@@ -48,17 +49,18 @@ Bundle 'honza/vim-snippets'
 
 " themes
 Bundle 'flazz/vim-colorschemes'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'chriskempson/base16-vim'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'qqshfox/inkpot'
-Bundle 'twerth/ir_black'
-Bundle 'molokai'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'wombat256.vim'
-Bundle 'xoria256.vim'
+Bundle 'blerins/flattown'
+        "Bundle 'altercation/vim-colors-solarized'
+        "Bundle 'chriskempson/vim-tomorrow-theme'
+        "Bundle 'chriskempson/base16-vim'
+        "Bundle 'nanotech/jellybeans.vim'
+        "Bundle 'tpope/vim-vividchalk'
+        "Bundle 'qqshfox/inkpot'
+        "Bundle 'twerth/ir_black'
+        "Bundle 'molokai'
+        "Bundle 'w0ng/vim-hybrid'
+        "Bundle 'wombat256.vim'
+        "Bundle 'xoria256.vim'
 
 " load filetype, plugin and indent are detected
 " required!
@@ -154,10 +156,10 @@ let base16colorspace=256
 
 " set colorscheme based on what computer I'm on
 if hostname() == "g62x"
-"  colorscheme badwolf
+  colorscheme badwolf
 "  colorscheme base16-default
-  colorscheme base16-monokai
-  set background=dark
+"  colorscheme base16-monokai
+"  set background=dark
 elseif hostname() == "devbox"
   colorscheme jellybeans
 elseif hostname() == "debian"
@@ -176,7 +178,9 @@ let g:airline_powerline_fonts=0
 
 " Ctrlp mappings
 let g:ctrlp_map = '<c-p>'               " invokes Ctrlp
-let g:ctrlp_cmd = 'CtrlPBuffer'        " opens ctrlp in buffer mode rather than filesmode
+let g:ctrlp_cmd = 'CtrlPBuffer'         " opens ctrlp in buffer mode rather than filesmode
+let g:ctrlp_max_files = 0               " no max file limit
+let g:ctrlp_working_path_mode = 0       " search from current directory rather than project root
 let g:ctrlp_clear_cache_on_exit = 0     " does not clear cache after vim close
 "let g:ctrlp_by_filename = 1 	        " search by fuzzy filename rather than path
 let g:ctrlp_match_window_reversed = 0	" start results at top of ctrlp window 
