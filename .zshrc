@@ -65,6 +65,7 @@ alias mplayer-invert='mplayer -vf eq2=1:-1'
 alias suspend='sudo pm-suspend && i3lock -c 000000'
 alias hibernate='sudo pm-hibernate && i3lock -c 000000'
 alias listvms='echo "----------ALL VIRTUAL MACHINES----------" && VBoxManage list vms && echo "----------RUNNING VIRTUAL MACHINES----------" && VBoxManage list runningvms'
+alias nmcli='nmcli -m multiline -f all'
 #pretty git logs
 #alias git l="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -85,15 +86,15 @@ export TERM=screen-256color
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+ DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man colorize command-not-found extract gem history history-substring-search rsync vagrant vi-mode vundle dirhistory frontend-search)
+plugins=(git git-extras gitfast autojump colored-man colorize command-not-found extract gem history history-substring-search rsync ssh-agent vagrant vi-mode vundle dirhistory frontend-search)
 #common-aliases
 #debian
 
@@ -108,9 +109,9 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -
 # display art in new shells
 #cat .art
 
+# RYAN RYAN RYAN RYAN RYAN
 # base 16 shell
-#source /home/ry/.dotfiles/base16-default.dark-shell.sh
-source $HOME/.dotfiles/base16-default.dark-shell.sh
+#source $HOME/.dotfiles/base16-default.dark-shell.sh
 
 # set default editor
 export EDITOR='vim'
