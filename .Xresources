@@ -1,11 +1,11 @@
 !!!!!        For a commented list of options for urxvt
-!!!!!      !  urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
-!!!!!      !
-!!!!!      ! For a commented list with descriptions for urxvt
-!!!!!      ! TERM=dump command man -Pcat urxvt | sed -n '/depth: b/,/^BA/p'|sed '$d'|sed '/^       [a-z]/s/^ */^/g'|sed -e :a -e 'N;s/\n/@@/g;ta;P;D'|sed 's,\^\([^@]\+\)@*[\t ]*\([^\^]\+\),! \2\n! URxvt*\1\n\n,g'|sed 's,@@\(  \+\),\n\1,g'|sed 's,@*$,,g'|sed '/^[^!]/d'|tr -d "'\`" >> ~/.Xresources
-!!!!!      ! 
-!!!!!      ! also urxvt --help 
-!!!!!      ! and urxvt -help 
+!!!!!        urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
+
+!!!!!       For a commented list with descriptions for urxvt
+!!!!!       TERM=dump command man -Pcat urxvt | sed -n '/depth: b/,/^BA/p'|sed '$d'|sed '/^       [a-z]/s/^ */^/g'|sed -e :a -e 'N;s/\n/@@/g;ta;P;D'|sed 's,\^\([^@]\+\)@*[\t ]*\([^\^]\+\),! \2\n! URxvt*\1\n\n,g'|sed 's,@@\(  \+\),\n\1,g'|sed 's,@*$,,g'|sed '/^[^!]/d'|tr -d "'\`" >> ~/.Xresources
+
+!!!!!       also urxvt --help 
+!!!!!       and urxvt -help 
 
 *geometry: 92x46
 *iconFile: /usr/share/icons/Faience/apps/scalable/utilities-terminal.svg
@@ -47,6 +47,7 @@ URxvt.perl-ext-common: default,clipboard
 URxvt*saveLines: 10000
 
 ! ------------------
+
 !Colors
 
 ! Ryan
@@ -117,98 +118,99 @@ URxvt*saveLines: 10000
 ! *.color19: base02
 ! *.color20: base04
 ! *.color21: base06
-!
-! ! ------------------
-! 
-! ! Base16 Monokai
-! ! Scheme: Wimer Hazenberg (http://www.monokai.nl)
-! #define base00 #272822
-! #define base01 #383830
-! #define base02 #49483e
-! #define base03 #75715e
-! #define base04 #a59f85
-! #define base05 #f8f8f2
-! #define base06 #f5f4f1
-! #define base07 #f9f8f5
-! #define base08 #f92672
-! #define base09 #fd971f
-! #define base0A #f4bf75
-! #define base0B #a6e22e
-! #define base0C #a1efe4
-! #define base0D #66d9ef
-! #define base0E #ae81ff
-! #define base0F #cc6633
-! *.foreground: base05
-! *.background: base00
-! *.cursorColor: base05
-! *.color0: base00
-! *.color1: base08
-! *.color2: base0B
-! *.color3: base0A
-! *.color4: base0D
-! *.color5: base0E
-! *.color6: base0C
-! *.color7: base05
-! *.color8: base03
-! *.color9: base08
-! *.color10: base0B
-! *.color11: base0A
-! *.color12: base0D
-! *.color13: base0E
-! *.color14: base0C
-! *.color15: base07
-! ! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! ! use 'shell' template to set these if necessary
-! *.color16: base09
-! *.color17: base0F
-! *.color18: base01
-! *.color19: base02
-! *.color20: base04
-! *.color21: base06!
- 
+
 ! ------------------
-! Base16 Eighties
-! Scheme: Chris Kempson (http://chriskempson.com)
-#define base00 #2d2d2d
-#define base01 #393939
-#define base02 #515151
-#define base03 #747369
-#define base04 #a09f93
-#define base05 #d3d0c8
-#define base06 #e8e6df
-#define base07 #f2f0ec
-#define base08 #f2777a
-#define base09 #f99157
-#define base0A #ffcc66
-#define base0B #99cc99
-#define base0C #66cccc
-#define base0D #6699cc
-#define base0E #cc99cc
-#define base0F #d27b53
-URxvt.foreground: base05
-URxvt.background: base00
-URxvt.cursorColor: base05
-URxvt.color0: base00
-URxvt.color1: base08
-URxvt.color2: base0B
-URxvt.color3: base0A
-URxvt.color4: base0D
-URxvt.color5: base0E
-URxvt.color6: base0C
-URxvt.color7: base05
-URxvt.color8: base03
-URxvt.color9: base08
-URxvt.color10: base0B
-URxvt.color11: base0A
-URxvt.color12: base0D
-URxvt.color13: base0E
-URxvt.color14: base0C
-URxvt.color15: base07
+ 
+! Base16 Monokai
+! Scheme: Wimer Hazenberg (http://www.monokai.nl)
+ #define base00 #272822
+ #define base01 #383830
+ #define base02 #49483e
+ #define base03 #75715e
+ #define base04 #a59f85
+ #define base05 #f8f8f2
+ #define base06 #f5f4f1
+ #define base07 #f9f8f5
+ #define base08 #f92672
+ #define base09 #fd971f
+ #define base0A #f4bf75
+ #define base0B #a6e22e
+ #define base0C #a1efe4
+ #define base0D #66d9ef
+ #define base0E #ae81ff
+ #define base0F #cc6633
+ *.foreground: base05
+ *.background: base00
+ *.cursorColor: base05
+ *.color0: base00
+ *.color1: base08
+ *.color2: base0B
+ *.color3: base0A
+ *.color4: base0D
+ *.color5: base0E
+ *.color6: base0C
+ *.color7: base05
+ *.color8: base03
+ *.color9: base08
+ *.color10: base0B
+ *.color11: base0A
+ *.color12: base0D
+ *.color13: base0E
+ *.color14: base0C
+ *.color15: base07
 ! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
 ! use 'shell' template to set these if necessary
-URxvt*.color16: base09
-URxvt*.color17: base0F
-URxvt*.color18: base01
-URxvt*.color19: base02
-URxvt*.color20: base04
-URxvt*.color21: base06
+ *.color16: base09
+ *.color17: base0F
+ *.color18: base01
+ *.color19: base02
+ *.color20: base04
+ *.color21: base06!
+ 
+! ------------------
+
+! Base16 Eighties
+! Scheme: Chris Kempson (http://chriskempson.com)
+!#define base00 #2d2d2d
+!#define base01 #393939
+!#define base02 #515151
+!#define base03 #747369
+!#define base04 #a09f93
+!#define base05 #d3d0c8
+!#define base06 #e8e6df
+!#define base07 #f2f0ec
+!#define base08 #f2777a
+!#define base09 #f99157
+!#define base0A #ffcc66
+!#define base0B #99cc99
+!#define base0C #66cccc
+!#define base0D #6699cc
+!#define base0E #cc99cc
+!#define base0F #d27b53
+!URxvt.foreground: base05
+!URxvt.background: base00
+!URxvt.cursorColor: base05
+!URxvt.color0: base00
+!URxvt.color1: base08
+!URxvt.color2: base0B
+!URxvt.color3: base0A
+!URxvt.color4: base0D
+!URxvt.color5: base0E
+!URxvt.color6: base0C
+!URxvt.color7: base05
+!URxvt.color8: base03
+!URxvt.color9: base08
+!URxvt.color10: base0B
+!URxvt.color11: base0A
+!URxvt.color12: base0D
+!URxvt.color13: base0E
+!URxvt.color14: base0C
+!URxvt.color15: base07
+!! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+!! use 'shell' template to set these if necessary
+!URxvt*.color16: base09
+!URxvt*.color17: base0F
+!URxvt*.color18: base01
+!URxvt*.color19: base02
+!URxvt*.color20: base04
+!URxvt*.color21: base06
