@@ -41,9 +41,11 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'edsono/vim-matchit'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'tpope/vim-sensible'
-Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'StanAngeloff/php.vim'
+Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'tmux-plugins/vim-tmux'
+Bundle 'docunext/closetag.vim'
 " snipmate start
 Bundle 'garbas/vim-snipmate'
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -153,6 +155,13 @@ set autochdir
 set backupdir=~/.tmp
 set directory=~/.tmp
 
+" autocompletion? ctrl-x then ctrl-o
+"autocmd FileType php,css set omnifunc=syntaxcomplete#Complete
+"set omnifunc=syntaxcomplete#Complete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType php set omnifunc=syntaxcomplete#Complete
+"set omnifunc=phpcomplete#CompletePHP
+
 " note to self easymotion is <leader><leader>w or <leader><leader>b etc...
 
 " Access colors present in 256 colorspace
@@ -206,3 +215,7 @@ nmap <leader>gu :GundoToggle<cr>
 " syntastic enabled
 let g:syntastic_check_on_open = 1
 "let g:syntastic_css_checkers = ['prettycss']
+
+" open all folds 
+"set foldlevelstart=99
+"set nofoldenable
