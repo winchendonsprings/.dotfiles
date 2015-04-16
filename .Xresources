@@ -15,6 +15,7 @@
 *internalBorder: 5
 *externalBorder: 0
 *borderLess: false
+*cursorBlink: true
 
 ! ------------------
 
