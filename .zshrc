@@ -6,17 +6,19 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-if [[ "$HOST" == "g62x" ]]; then	 
-    ZSH_THEME="../../.dotfiles/simple-lap"						#laptop
-elif [[ "$HOST" == "devbox" ]]; then
-    ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
-elif [[ "$HOST" == "precise32" ]]; then
-    ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
-elif [[ "$HOST" == "debian" ]]; then
-    ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
-fi
 
-alias startx='ssh-agent startx'
+ZSH_THEME="../../.dotfiles/simple-ry"
+#if [[ "$HOST" == "g62x" ]]; then	 
+    #ZSH_THEME="../../.dotfiles/simple-lap"						#laptop
+#elif [[ "$HOST" == "devbox" ]]; then
+    #ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
+#elif [[ "$HOST" == "precise32" ]]; then
+    #ZSH_THEME="../../.dotfiles/simple-dev"						#laptop
+#elif [[ "$HOST" == "debian" ]]; then
+    #ZSH_THEME="../../.dotfiles/simple-desk"						#laptop
+#fi
+
+#alias startx='ssh-agent startx'
 
 alias ohmyzsh='vim ~/.oh-my-zsh'
 alias zshconfig='vim ~/.zshrc'
@@ -24,20 +26,21 @@ alias i3config='vim ~/.dotfiles/config-i3'
 alias vimconfig='vim ~/.vimrc'
 alias tmuxconfig='vim ~/.tmux.conf'
 alias p='pwd'
-alias ag='ag -S' #case insensitive unless a caps is used
+alias rm='rm -i'
+alias ag='ag --smart-case' #case insensitive unless a caps is used
 alias note='vim /home/ry/Dropbox/note.txt'
 alias art='cat /home/ry/.art'
 alias clock='tty-clock -c -C 7 -f "%^a %^b %d %Y"'
 alias clock2='watch --no-title -n 1 date +"%H:%M:%S_%A_%B_%d_%Y"'
 alias battery='watch --no-title -n 1 acpi'
 alias dropbox-status='watch -n 1 --no-title dropbox status'
-alias ack='ack-grep'
+alias ack='ack-grep --ignore-case'
 alias bitlbee-on='bitlbee -c /home/ry/.bitlbee/bitlbee.conf -d /home/ry/.bitlbee'
 #alias colors='./.dotfiles/colortest.sh -w'
 alias upgrade='sudo git-extras update && vundle-update && upgrade_oh_my_zsh && sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias offlineimap-bl='offlineimap -u blinkenlights'
 alias weather='sh ~/Documents/weatherpdx.sh'
-alias mpg123='mpg123 --title --verbose --control'
+alias music='mpg123 --title --control'
 alias sudo aptitude='nocorrect sudo aptitude'
 alias aptitude='nocorrect aptitude'
 alias sudo='nocorrect sudo'
@@ -60,12 +63,14 @@ alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 #alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lr='ls -trlaFh'   #sorted by date,reverse,show type,human readable
 alias mailsync='sh /home/ry/Documents/mailsync.sh'
-alias archivemail-ry='sh /home/ry/Documents/archive-my-mail'
+alias archivemail-ry='sh /home/ry/Documents/archivemail-ry.sh'
 alias mplayer-invert='mplayer -vf eq2=1:-1'
 alias suspend='sudo pm-suspend && i3lock -c 000000'
 alias hibernate='sudo pm-hibernate && i3lock -c 000000'
 alias listvms='echo "----------ALL VIRTUAL MACHINES----------" && VBoxManage list vms && echo "----------RUNNING VIRTUAL MACHINES----------" && VBoxManage list runningvms'
 alias nmcli='nmcli -m multiline -f all'
+memcpu() { echo "*** Top 10 cpu eating process ***"; ps auxf | sort -nr -k 3 | head -10;
+    echo  "*** Top 10 memory eating process ***"; ps auxf | sort -nr -k 4 | head -10;  }
 #pretty git logs
 #alias git l="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #alias git lg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -94,7 +99,30 @@ export TERM=screen-256color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras gitfast autojump colored-man colorize command-not-found extract gem history history-substring-search rsync ssh-agent vagrant vi-mode vundle dirhistory frontend-search)
+plugins=(
+    git
+    git-extras
+    gitfast
+    colored-man
+    colorize
+    composer
+    command-not-found
+    extract
+    fasd
+    gem
+    history
+    history-substring-search
+    rsync
+    ssh-agent
+    vagrant
+    vi-mode
+    vundle
+    dirhistory
+    frontend-search
+    k
+    ubuntu
+)
+#autojump
 #common-aliases
 #debian
 
@@ -147,6 +175,13 @@ bindkey '^r' history-incremental-search-backward
 # removes the lag between swithing from command to insertmode in vi-mode
 export	KEYTIMEOUT=1
 
+# fasd https://github.com/clvv/fasd
+#eval "$(fasd --init auto zsh-hook zsh-ccomp-install zsh-wcomp-install)"
+eval "$(fasd --init auto zsh-hook zsh-ccomp zsh-wcomp)"
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #eval `keychain --eval id_rsa --clear`
+
+# until k is available in ohmyzsh
+#source /home/ry/.k/k.sh
