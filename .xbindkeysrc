@@ -70,7 +70,8 @@
 ##################################
 
 # The format of a command line is:
-"dmenu_run -i"
+#"dmenu_run -i"
+"/home/ry/.dmenu/run-recent -l 10"
 Alt + F2
 
 #       "i3-dmenu-desktop"
@@ -93,5 +94,5 @@ XF86AudioLowerVolume
 XF86AudioRaiseVolume
 
 # Mute volume
-"amixer sset Master toggle"
-XF86AudioMute
+#"amixer sset Master toggle"
+#XF86AudioMute
