@@ -46,7 +46,7 @@ realdelete = no
 # idlefolders = ['INBOX', 'INBOX.Alerts']
 #
 #idlefolders = ['INBOX', 'LCA', 'LCM', 'GV']
-idlefolders = ['INBOX', 'LCM', 'GV']
+idlefolders = ['INBOX', 'GV']
 
 # You can specify which folders to sync using the folderfilter
 # setting. You can provide any python function (e.g. a lambda function)
